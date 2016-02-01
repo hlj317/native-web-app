@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:scrollbars="none"
+    tools:context=".ContactActivity" >
+
+    <LinearLayout
+        android:id="@+id/mywrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="1.学院宗旨："
+            android:textColor="#e03131"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/content_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="8dp"
+            android:text="在这里，扯扯淡，吐吐槽，每天开心一点点，每天进步一点点！"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/title_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="2.积分规则："
+            android:textColor="#e03131"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/content_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="8dp"
+            android:text="发布文章通过审核+50分；评论+2分；别人为你的评论点亮+1分；别人为你的文章点赞+1分；"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/title_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="3.等级制度："
+            android:textColor="#e03131"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/content_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="8dp"
+            android:text="实习生→正式员工→主管→经理→区域经理→高级经理→总监→高级总监→副总→总经理→CEO，朝着CEO的目标前进吧！等级在后面的优化版本中会起到非常核心的作用，大家可以期待！"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/title_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="4.强大的导师团："
+            android:textColor="#e03131"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/content_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="8dp"
+            android:text="导师团的成员会不断增加，相信不管是在职场的道路上，抑或在人生的旅途中，都会给大家带来巨大的帮助！"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/title_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="5.导师寄语："
+            android:textColor="#e03131"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/content_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="8dp"
+            android:text="最后，希望大家在不断提高自己职场素养的同时，能够玩得开心，这才是最重要的！"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/contact_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/contact_bg"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+</ScrollView>

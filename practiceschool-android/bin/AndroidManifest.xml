@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- versionCode：系统根据这个参数来升级，versionName为APP具体版本号 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.practiceschool"
+    android:versionCode="7"
+    android:versionName="1.1.6" >
+ 
+    <!-- 允许网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 对SD卡进行读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    
+    <!-- 提供创建与删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 照相机的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    
+    <!-- 获取用户设备的IMEI，通过IMEI和mac来唯一的标识用户(友盟) -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    <!-- 获取用户设备的mac地址，在平板设备上，无法通过imei标示设备，我们会将mac地址作为用户的唯一标识(友盟) -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+	<!--【可选】如果需要设置前台是否显示通知，需要设置这个权限-->
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<!-- targetSdkVersion：sdk目标支持版本， minSdkVersion：最小支持版本-->
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" /> 
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:name="practiceschool.downloadimg.UILApplication"
+        android:versionName="@string/app_versionName"
+        android:label="@string/app_name"  
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <!-- 修炼圣地页面 -->
+        <activity
+            android:name="practiceschool.ui.DiscoveryActivity"
+            android:label="@string/discovery_name"
+            android:theme="@style/ordinary"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 注册页面 -->
+        <activity
+            android:name="practiceschool.ui.RegisterActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 登录页面 -->
+        <activity
+            android:name="practiceschool.ui.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心页面 -->
+        <activity
+            android:name="practiceschool.ui.UsercenterActivity"
+            android:theme="@style/ordinary"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 导师详情页面 -->
+        <activity
+            android:name="practiceschool.ui.TutorActivity"
+            android:theme="@style/article"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 导师列表页面 -->
+        <activity
+            android:name="practiceschool.ui.TutorListActivity"
+            android:theme="@style/ordinary"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 文章详情页面 -->
+        <activity
+            android:name="practiceschool.ui.ArticleActivity"
+            android:theme="@style/article"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 写点什么页面 -->
+        <activity
+            android:name="practiceschool.ui.WritingActivity"
+            android:theme="@style/ordinary"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity> 
+        <!-- 我的发布编辑页面 -->
+        <activity
+            android:name="practiceschool.ui.PublisheditActivity"
+            android:theme="@style/article"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我的发布页面 -->
+        <activity
+            android:name="practiceschool.ui.PublishActivity"
+            android:theme="@style/article"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 收藏详情页面 -->
+        <activity
+            android:name="practiceschool.ui.CollectActivity"
+            android:theme="@style/article"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 文章评论，窗口页面，windowSoftInputMode设置窗口模式-->
+        <activity
+            android:name="practiceschool.ui.WinReviewActivity"
+            android:windowSoftInputMode="adjustResize"    
+            android:screenOrientation="portrait"  
+    		android:theme="@style/review_dialog" >
+        </activity>
+        <!-- 有一说一页面 -->
+        <activity
+            android:name="practiceschool.ui.ContactActivity"
+            android:theme="@style/ordinary"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- APP导向页面，也是主页面 -->
+        <activity
+            android:name="practiceschool.ui.GuideActivity"
+            android:theme="@style/MyTheme.NoTitleBar.CustomBackground"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> 
+        <service android:name="practiceschool.music.NatureService"></service>
+        
+        <!-- 自定义广播，通知用户等级和积分变化 -->
+        <receiver android:name="practiceschool.utils.UserReceiver">  
+            <intent-filter>
+                <action android:name="book.receiver.userReceiver"></action> 
+            </intent-filter>
+　　		</receiver> 
+        
+        <!-- Widget -->
+<!--         <receiver android:name="zhihu.downloadimg.UILWidgetProvider" >
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider" />
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver> -->
+        
+        <!--APPKEY-->
+        <meta-data android:value="555db19f67e58e8ad30021e3" android:name="UMENG_APPKEY"></meta-data>
+		<meta-data
+		    android:name="UMENG_MESSAGE_SECRET"
+		    android:value="e3c65c00efe631caef0130e71e91ec45" >
+		</meta-data>
+        <!--渠道ID-->
+		<meta-data android:value="Channel ID" android:name="UMENG_CHANNEL"/>
+		<!--友盟版本更新-->
+		<service
+   			 android:name="com.umeng.update.net.DownloadingService"
+    		 android:process=":DownloadingService" >
+		</service>
+		<activity 
+    		android:name="com.umeng.update.UpdateDialogActivity"
+    		android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+		</activity>
+		
+		<!--友盟推送消息-->
+		<receiver
+		    android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+		    android:process=":push"
+		    android:exported="false" >
+		</receiver>
+		<receiver
+		    android:name="com.umeng.message.SystemReceiver"
+		    android:process=":push" >
+		    <intent-filter>
+		        <action android:name="android.intent.action.BOOT_COMPLETED" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="android.intent.action.PACKAGE_REMOVED" />
+		        <data android:scheme="package" />
+		    </intent-filter>
+		</receiver>
+		<receiver
+		    android:name="com.umeng.message.MessageReceiver"
+		    android:process=":push" >
+		    <intent-filter>
+		        <action android:name="org.agoo.android.intent.action.RECEIVE" />
+		    </intent-filter>
+		</receiver>
+		<receiver
+		    android:name="com.umeng.message.ElectionReceiver"
+		    android:process=":push" >
+		    <intent-filter>
+		        <action android:name="org.agoo.android.intent.action.ELECTION_RESULT_V4" />
+		        <category android:name="umeng" />
+		    </intent-filter>
+		</receiver>
+		<receiver
+		    android:name="com.umeng.message.RegistrationReceiver"
+		    android:exported="false" >
+		    <intent-filter>
+		        <action android:name="com.example.practiceschool.intent.action.COMMAND" />
+		    </intent-filter>
+		</receiver>
+		<receiver android:name="com.umeng.message.UmengMessageBootReceiver" >
+		    <intent-filter>
+		        <action android:name="android.intent.action.BOOT_COMPLETED" />
+		    </intent-filter>
+		</receiver>	
+		<service
+		    android:name="com.umeng.message.UmengService"
+		    android:label="职场修炼学院-消息推送"
+		    android:exported="true"
+		    android:process=":push" >
+	    <intent-filter>
+	        <action android:name="com.example.practiceschool.intent.action.START" />
+	    </intent-filter>
+	    <intent-filter>
+	        <action android:name="com.example.practiceschool.intent.action.COCKROACH" />
+	    </intent-filter>
+	    <intent-filter>
+	        <action android:name="org.agoo.android.intent.action.PING_V4" />
+	    <category android:name="umeng" />
+	    </intent-filter>
+		</service>
+		<service android:name="com.umeng.message.UmengIntentService" 
+		    android:process=":push" />
+		<service 
+		    android:name="com.umeng.message.UmengMessageIntentReceiverService"
+		    android:process=":push" 
+		    android:exported="true" >
+		    <intent-filter>
+		        <action android:name="org.android.agoo.client.MessageReceiverService" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="org.android.agoo.client.ElectionReceiverService" />
+		    </intent-filter>
+		</service>
+		<!-- V1.3.0添加的service，负责下载通知的资源 -->
+		<service android:name="com.umeng.message.UmengDownloadResourceService" />
+		
+    </application>
+
+</manifest>

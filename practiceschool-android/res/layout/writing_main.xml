@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/writing_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/mychannel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="15dp"
+            android:text="请选择分类："
+            android:textColor="#cccccc"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/channel_learning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"       
+                android:layout_weight="1"
+                android:background="@drawable/channel_focus"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="职场之道"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/channel_girls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/channel_default"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="热血泡妞"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/channel_exercise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/channel_default"
+                android:focusable="true"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="健身无敌"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/channel_ask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/channel_default"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="有什么要问"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="360dp"
+            android:layout_height="270dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/write_add_cover" />
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autoText="false"
+            android:background="@null"
+            android:capitalize="none"
+            android:gravity="fill_horizontal"
+            android:hint="请输入标题（25字以内）"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autoText="false"
+            android:background="@null"
+            android:capitalize="none"
+            android:gravity="fill_horizontal"
+            android:hint="点击编辑文本"
+            android:inputType="textMultiLine"
+            android:paddingBottom="10dp"
+            android:scrollHorizontally="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/publish_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/write_btn_select"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="发布"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</ScrollView>

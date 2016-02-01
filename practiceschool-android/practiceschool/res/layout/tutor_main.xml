@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tutor_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".TutorActivity" >
+
+    <RelativeLayout 
+        android:id="@+id/tutor_banner_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp" >
+
+        <practiceschool.circlepic.CircularImage
+            android:id="@+id/tutor_portrait"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true" />
+
+        <LinearLayout
+            android:id="@+id/tutor_itemmenu"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+        	android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="#000000" >
+
+          <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"              
+                android:layout_height="wrap_content"   
+                android:layout_marginRight="10dp"               
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在读取中 ……"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout> 
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="特点："
+            android:textColor="#666666"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/feature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra = "5dp"
+            android:text="正在读取中 ……"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="推荐值："
+            android:textColor="#666666"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra = "5dp"
+            android:text="正在读取中 ……"
+            android:textColor="#e03131"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="微信号："
+            android:textColor="#666666"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra = "5dp"
+            android:text="正在读取中 ……"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+    </LinearLayout>
+    
+   <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请搜索微信号关注导师，届时请注明由【职场修炼学院】APP推荐。"
+            android:lineSpacingExtra = "5dp"
+            android:textColor="#999999"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    
+
+</LinearLayout>

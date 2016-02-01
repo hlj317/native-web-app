@@ -1,0 +1,139 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="AutoWindowTitleBackground"> 
+        <item name="android:background">#333333</item> 
+    </style> 
+    
+    <style name="register" parent="android:Theme">    
+        <item name="android:windowTitleSize">56dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/AutoWindowTitleBackground</item>  
+    </style>
+    
+    <style name="ordinary" parent="android:Theme">  
+        <item name="android:actionBarStyle" >@style/myActionBarStyle</item>  
+        <item name="android:actionBarTabTextStyle">@style/actionText</item>
+        <item name="android:actionBarTabBarStyle">@style/actionTab</item>
+        <item name="android:windowTitleSize">56dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/AutoWindowTitleBackground</item>  
+        <item name="android:windowIsTranslucent">false</item> 
+    </style>  
+
+    <style name="discovery" parent="android:Theme">  
+        <item name="android:actionBarStyle" >@style/myActionBarStyle</item>  
+        <item name="android:actionBarTabTextStyle">@style/actionText</item>
+        <item name="android:actionBarTabBarStyle">@style/actionTab</item>
+        <item name="android:windowTitleSize">56dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/AutoWindowTitleBackground</item>  
+        <item name="android:windowAnimationStyle">@style/Animation.Activity.Translucent.Style</item>
+        <item name="android:windowIsTranslucent">false</item> 
+    </style>
+    
+    <style name="article" parent="android:Theme">  
+        <item name="android:actionBarStyle" >@style/myActionBarStyle</item>  
+        <item name="android:actionBarTabTextStyle">@style/actionText</item>
+        <item name="android:actionBarTabBarStyle">@style/actionTab</item>
+        <item name="android:windowTitleSize">56dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/AutoWindowTitleBackground</item>  
+        <item name="android:windowIsTranslucent">true</item> 
+    </style>  
+  
+    <style name="Animation.Activity.Translucent.Style" parent="@android:style/Animation.Translucent">  
+        <item name="android:windowExitAnimation">@anim/out_to_right</item>  
+    </style>  
+     
+	<style name="actionText" parent="android:TextAppearance.Holo.Widget.ActionBar.Menu">  
+	    <item name="android:textSize">16sp</item>  
+	    <item name="android:textStyle">italic</item>
+	    <item name="android:textColor">#666</item>
+	</style>  
+
+	<!-- 这里可以设定四种tab选中状态 -->
+	<style name="actionTab" parent="android:Widget.ActionBar.TabBar"> 
+		<item name="android:background">#ffffff</item>
+	</style>
+      
+    <style name="myActionBarStyle" parent="android:Widget.ActionBar" >  
+        <item name="android:background">#0077d9</item>  
+        <item name="android:titleTextStyle">@style/AcBar_titleStyle</item>  
+    </style>  
+    
+    <style name="AcBar_titleStyle">  
+        <item name="android:textSize">18sp</item>  
+        <item name="android:textColor">#FFFFFF</item>  
+    </style> 
+    
+    <style name="MyTheme.NoTitleBar.CustomBackground" parent="@android:Theme.Black">    
+        <item name="android:windowBackground">@color/guide</item>    
+        <item name="android:windowNoTitle">true</item>    
+        <item name="android:windowFullscreen">true</item>    
+        <item name="android:windowContentOverlay">@null</item>    
+    </style>  
+    
+    
+    <!-- 弹出对话框, 背景全透明 -->
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 导航按钮的样式 -->
+    <style name="navigation_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/tab_text_selector</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">1dip</item>
+        <item name="android:paddingBottom">4dip</item>
+        <item name="android:background">@drawable/tab_item_bg_selector</item>
+    </style>
+   
+    <!-- 评论对话框样式 -->
+    <style name="review_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:padding">0dp</item>
+    </style>
+    
+    <style name="AnimationPreview">  
+        <item name="android:windowEnterAnimation">@anim/push_top_in</item>  
+        <item name="android:windowExitAnimation">@anim/push_top_out</item>  
+    </style>
+    
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+        <item name="android:windowIsTranslucent">true</item> 
+    </style>
+</resources>

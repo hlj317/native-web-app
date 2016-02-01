@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicActivity" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlelayout" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/discovery_title"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <!-- 给radiobutton加icon图标 -->
+            <!-- android:drawableTop="@drawable/tab_home_icon_selector" -->
+
+            <RadioButton
+                android:id="@+id/radio_girls"
+                style="@style/navigation_style"
+                android:text="热血泡妞" />
+
+            <RadioButton
+                android:id="@+id/radio_learning"
+                style="@style/navigation_style"
+                android:text="晋升之道" />
+
+            <RadioButton
+                android:id="@+id/radio_exercise"
+                style="@style/navigation_style"
+                android:text="健身无敌" />
+
+            <RadioButton
+                android:id="@+id/radio_ask"
+                style="@style/navigation_style"
+                android:text="有什么要问" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

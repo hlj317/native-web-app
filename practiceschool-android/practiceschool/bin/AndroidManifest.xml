@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.practiceschool"
+    android:versionCode="1"
+    android:versionName="1.0.2" >
+ 
+    <!-- 允许网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 对SD卡进行读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    
+    <!-- 提供创建与删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 照相机的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    
+    <!-- 获取用户设备的IMEI，通过IMEI和mac来唯一的标识用户(友盟) -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    <!-- 获取用户设备的mac地址，在平板设备上，无法通过imei标示设备，我们会将mac地址作为用户的唯一标识(友盟) -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+ 
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" /> 
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:name="practiceschool.downloadimg.UILApplication"
+        android:versionName="@string/app_versionName"
+        android:label="@string/app_name"  
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="practiceschool.ui.DiscoveryActivity"
+            android:label="@string/discovery_name"
+            android:theme="@style/discovery"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="practiceschool.ui.RegisterActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="practiceschool.ui.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="practiceschool.ui.UsercenterActivity"
+            android:theme="@style/discovery"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+
+        </activity>
+        <activity
+            android:name="practiceschool.ui.TutorActivity"
+            android:theme="@style/discovery"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="practiceschool.ui.TutorListActivity"
+            android:theme="@style/discovery"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="practiceschool.ui.ArticleActivity"
+            android:theme="@style/discovery"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="practiceschool.ui.WritingActivity"
+            android:theme="@style/register"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity> 
+        <activity
+            android:name="practiceschool.ui.PublisheditActivity"
+            android:theme="@style/register"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="practiceschool.ui.PublishActivity"
+            android:theme="@style/register"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="practiceschool.ui.CollectActivity"
+            android:theme="@style/register"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="practiceschool.ui.WinReviewActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"  
+    		android:theme="@style/review_dialog" >
+        </activity>
+        <activity
+            android:name="practiceschool.ui.ContactActivity"
+            android:theme="@style/discovery"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="practiceschool.ui.GuideActivity"
+            android:theme="@style/MyTheme.NoTitleBar.CustomBackground"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> 
+        <service android:name="practiceschool.music.NatureService"></service>
+        
+        <!-- 自定义广播，通知用户等级和积分变化 -->
+        <receiver android:name="practiceschool.utils.UserReceiver">  
+            <intent-filter>
+                <action android:name="book.receiver.userReceiver"></action> 
+            </intent-filter>
+　　		</receiver> 
+        
+        <!-- Widget -->
+<!--         <receiver android:name="zhihu.downloadimg.UILWidgetProvider" >
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider" />
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver> -->
+        
+        <!--APPKEY-->
+        <meta-data android:value="555db19f67e58e8ad30021e3" android:name="UMENG_APPKEY"></meta-data>
+        <!--渠道ID-->
+		<meta-data android:value="Channel ID" android:name="UMENG_CHANNEL"/>
+		<!--友盟-->
+		<service
+   			 android:name="com.umeng.update.net.DownloadingService"
+    		 android:process=":DownloadingService" >
+		</service>
+		<activity 
+    		android:name="com.umeng.update.UpdateDialogActivity"
+    		android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+		</activity>
+		
+    </application>
+
+</manifest>

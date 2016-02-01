@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/discovery_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@color/theme_color"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <ImageButton
+        android:id="@+id/title_move_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/title_move_btn_select"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/discovery_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/title_move_btn"
+        android:text="健身无敌"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/title_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/title_menu_select"
+        android:scaleType="centerCrop" />
+
+    <ImageButton
+        android:id="@+id/send_review_title_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/title_menu"
+        android:layout_marginRight="18dp"
+        android:background="#00000000"
+        android:src="@drawable/send_review_btn_medium" />
+    
+    <ImageButton
+        android:id="@+id/art_praise_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/send_review_title_medium"
+        android:layout_marginRight="18dp"
+        android:background="#00000000"
+        android:src="@drawable/praise_btn_grey" />
+    
+    <ImageButton
+        android:id="@+id/art_collect_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/art_praise_btn"
+        android:layout_marginRight="18dp"
+        android:background="#00000000"
+        android:src="@drawable/collect_btn_grey" />
+    
+    <TextView
+        android:id="@+id/art_praise_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="-4dp"
+        android:layout_alignBaseline="@id/art_praise_btn"
+        android:layout_toRightOf="@id/art_praise_btn"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+    
+    <TextView
+        android:id="@+id/art_collect_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-25dp"
+        android:layout_marginTop="-4dp"
+        android:layout_alignBaseline="@id/art_collect_btn"
+        android:layout_toRightOf="@id/art_collect_btn"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+</RelativeLayout>
