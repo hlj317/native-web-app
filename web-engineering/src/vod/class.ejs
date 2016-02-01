@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<%include header.ejs%>
+</head>
+<body>
+<div id="main">
+    <!--搜索框-->
+    <div id="search">
+        <div class="input">
+            <div class="des">
+                <img id="search_img" />
+                <span>搜一搜</span>
+            </div>
+        </div>
+        <div id="sortSwitch"><span class="text">默认</span><img id="sicon_arrows" /></div>
+    </div>
+
+    <!--排序-->
+    <div id="sortPage">
+        <ul>
+            <li data-sort="0" class="on"><img class="selected_img" />默认</li>
+            <li data-sort="1"><img class="selected_img" />人气</li>
+            <li data-sort="2"><img class="selected_img" />最新</li>
+        </ul>
+    </div>
+
+    <!--列表-->
+    <div id="list">
+        <div id="videoBox"></div>
+        <div id="loading">
+            <span class="s0"></span>
+            <span class="s1"></span>
+            <span class="s2"></span>
+            <span class="s3"></span>
+        </div>
+    </div>
+
+    <!--跳转到顶部按钮-->
+    <div id="toTopBtn">
+        <img id="p0_img" />
+    </div>
+
+</div>
+
+<div id="noContent">
+    <img id="no_content_img" />
+</div>
+
+<%include footer.ejs%>
+</body>
+</html>

@@ -1,0 +1,73 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/layout";
+@import "compass/typography";
+@import "compass/utilities/";
+@import "compass";
+
+@mixin box-padding($size1,$size2){
+	padding-left:$size1;
+	padding-top:$size1;
+	padding-right:$size2;padding-bottom:$size2;
+}
+
+$flag:ok;
+
+.mybody{
+	font-size:30px;
+}
+
+.border{
+	border:1px solid #000;
+	background:#ff0;
+}
+
+.h1{
+	@extend .mybody;
+	width:(100px + 25px)*2 ;
+	height:100px;
+	border:1px solid #f00;
+	@include border-radius(5px);
+	@include box-padding(25px,0px);
+	@include opacity(0.5);
+}
+
+ul{
+	@extend .mybody;
+	margin:0;
+	padding:0;
+	list-style:none;
+	li{
+		@include inline-block;
+		@include clearfix;
+		margin:0 0 0 5px;
+		a{
+			color:#f00;
+		}
+	}
+}
+
+@for $i from 1 through 3{
+	.item-#{$i}{
+		@extend .border;
+		@include inline-block;
+		width : 30px * $i;
+		height: 50px * $i;
+	}
+}
+
+$animal-list:(1,yellow,3px),(2,blue,10px);
+@each $animal,$color,$width in $animal-list{
+	.item-#{$animal}{
+		background: url(a#{$animal}.png);
+		border-color:$color;
+		border-width:$width;
+	}
+}
+
+$animal-list:(".item-1":#ffffff,".item-2":#ff1234);
+@each $header,$color in $animal-list{
+	#{$header}{
+		color:$color;
+	}
+}

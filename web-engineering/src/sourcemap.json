@@ -1,0 +1,52 @@
+{
+    "zepto": "js/libs/zepto",
+
+    "underscore": "js/libs/underscore",
+
+    "commonCss": "css/public/public",
+
+    "animateCss": "css/libs/animate",
+
+    "baidu" : "js/utils/baidu",
+
+    "squareYs" : "js/utils/squareYs",
+
+    "squareUtil" : "js/utils/squareUtil",
+
+    "swiper" : "js/components/swiper",
+
+    "modal" : "js/components/modal",
+
+    "toast" : "js/components/toast",
+
+    "commonJs" : "js/utils/common",
+
+    "base" : "js/utils/base",
+
+    "base64" : "js/utils/base64",
+
+    "mobile-input" : "js/utils/mobileInput",
+
+    "socketio" : "js/libs/socket.io",
+
+    "urlObj" : "js/utils/urlObj",
+
+    "uuid" : "js/libs/uuid",
+
+    "util" : "js/utils/util",
+
+    "zepto_cookie_min" : "js/libs/zepto.cookie.min",
+
+    "zepto_fx" : "js/libs/zepto.fx",
+
+    "zepto_touch" : "js/libs/zepto.touch",
+
+    "cookie" : "js/utils/cookie",
+
+    "doT" : "js/utils/doT",
+
+    "fastclick" : "js/utils/fastclick",
+
+    "weuiCss" : "css/libs/weui"
+
+}

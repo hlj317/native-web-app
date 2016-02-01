@@ -1,0 +1,234 @@
+#searchInput {
+  margin: 9px 7px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+
+#searchInput input {
+  display: block;
+}
+
+#searchInput #searchBtn {
+  font-size: 15px;
+  width: 20%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: #ddd;
+  -webkit-transition: background 300ms;
+}
+
+#searchInput #searchBtn.on {
+  background: #1b9ee2;
+}
+  
+#searchValue {
+  width: 80%;
+  height: 38px;
+  padding: 0; 
+  background: #fff;
+  border: 1px solid #d1d1d1;
+  border-right: none;
+  border-radius: 0;
+  text-indent: 10px;
+  font-size: 15px;
+  -webkit-appearance: none;
+}
+  
+.searchTitle {
+  padding-top: 7px;
+  text-indent: 5%;
+  font-size: 15px;
+  color: #666;
+  overflow: hidden; 
+}
+  
+.searchTitle span {
+  margin-right: 5%;
+  float: right;
+}
+  
+#searchHistory {
+  overflow: hidden;
+  display: none;
+  -webkit-transition: opacity 200ms;
+}
+  
+#searchHistory.remove {
+  opacity: 0;
+}
+  
+#searchHistory ul a {
+  text-decoration: none;
+}
+  
+#searchHistory ul li {
+  margin-top: 9px;
+  margin-left: 3.33%;
+  width: 41%;
+  height: 41px;
+  padding: 0 2%;
+  line-height: 41px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 13px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  text-align: center;
+  float: left;
+}
+  
+#searchHistory ul a li  {
+  color: #666;
+}
+  
+#searchHot {
+  margin-top: 12px;
+  -webkit-transition: opacity 200ms;
+}
+
+#searchHot.remove {
+  opacity: 0;
+}
+
+#searchHot ul{
+  padding: 10px 8% 0 8%;
+}
+  
+#searchHot ul a {
+  text-decoration: none;
+}
+  
+#searchHot ul li {
+  height: 30px;
+  line-height: 30px;
+  color: #666;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+  
+#searchHot ul li span {
+  float: left;
+  display: block;
+  margin: 4.5px 21px auto auto;
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  border-radius: 3px;
+  color: #666;
+  text-align: center;
+}
+
+#searchHot ul li span.child-0 {
+  background: #ff4200;
+  color: #fff;
+}
+
+#searchHot ul li span.child-1 {
+  background: #ff7200;
+  color: #fff;
+}
+
+#searchHot ul li span.child-2 {
+  background: #ffb400;
+  color: #fff;
+}
+
+#template {
+  display: none;
+}
+
+#videoDiv .item {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 96%;
+  min-height: 55px;
+  padding: 2%;
+  border-bottom: 1px solid #ccc;
+}
+
+#videoDiv .item .coverImg {
+  width: 31%;
+  background: url(../../imgs/square/hot/def-camera.png);
+  background-size: 100%;
+}
+
+#videoDiv .item .coverImg img {
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 300ms;
+}
+
+#videoDiv .item .left {
+  margin-left: 4%;
+  width: 65%;
+}
+
+#videoDiv .item h1 {
+  margin: 0;
+  color: #666666;
+  font-size: 15px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#videoDiv .item p {
+  margin: 2% 0 0 0;
+  color: #b6b6b6;
+  font-size: 12px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#videoDiv .item .view {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin: 2% 0 0 0;
+  height: 20px;
+  line-height: 20px;
+}
+
+#videoDiv .item .view .icon {
+  overflow: hidden;
+}
+
+#videoDiv .item .view .icon img {
+  display: block;
+  margin-top: 4.5px;
+  width: 16px;
+  height: 11px;
+}
+
+#videoDiv .item .view .viewCount {
+  padding: 0 3%;
+  font-size: 12px;
+  color: #b6b6b6;
+}
+
+#videoDiv .item .view .isVod {
+  display: none;
+  border: 2px solid #ffb400;
+  border-radius: 4px;
+  width: 15%;
+  height: 16px;
+  line-height: 16px;
+  color: #ff7200;
+  font-size: 12px;
+  text-align: center;
+}
+
+#noVideo {
+  display: none; 
+  width: 100%;
+  height: 400px;
+  background: #f5f5f5 url(../../imgs/square/hot/err-p0.jpg) no-repeat center;
+  background-size: 161.5px 137.5px;
+}

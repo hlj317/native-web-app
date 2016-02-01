@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@import "compass/reset";
+@import "compass/css3";
+@import "common";
+//@import "navi/*.png";
+// @include all-navi-sprites;   //合并雪碧图
+
+// sass主要用到的地方
+// ①css3 ②变量 ③嵌套 ④导入 ⑤定义代码函数，可以传参 ⑥继承 ⑦运算
+
+th,td{
+    font-size: 12px;
+    height: 0.60rem;
+    line-height: 0.60rem;
+    text-align: left;
+}
+.wrapper {
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size:100% 100%; 
+}
+
+/* 页面头部信息 */
+.top{
+    @include background(linear-gradient(top,#d9ebff,#96c4fb));
+    color:#243d6a;
+    border-top:1px solid #9c9da4;
+    margin-bottom: 0.10rem;
+    .border{
+        border-top:1px solid #dadfeb;
+        border-bottom:1px solid #dadfeb;
+        padding:0.20rem 0.10rem;
+        .title{
+            font-family: "黑体";
+            font-size: 18px;
+            padding:0 0 0 0.16rem;
+        }
+        .date{
+            font-size: 12px;
+            color:#333;
+            padding:0.10rem 0 0 0.16rem;
+            .author{
+                color:#e36c09;
+                font-weight:bold;
+            }
+            .time{
+                margin-left: 0.32rem;
+            }
+            .upate_time{
+                color:#f00;
+            }
+        }
+    }
+}
+
+/* 历史记录查看 */
+.history{
+    margin:0 0.16rem;
+    button{
+        line-height: 0.56rem;
+        text-align: center;
+        color: #fff;
+        @include text-shadow(1px 1px 1px #fff);
+        @include border-radius(0.10rem);
+        overflow: hidden;
+        color: #666;
+        border:1px solid #dce1e6;
+        @include box-shadow(0 1px 2px #fff inset,0 -1px 0 #a8abae inset);
+        @include background(linear-gradient(top,#f2f3f7,#e4e8ec)); 
+    }
+    .date_query{
+        display: none;
+        margin-top: 0.30rem;
+        ul{
+            width:100%;
+            margin-top:0;
+            li{
+                float:left;
+                text-align: center;
+                width:25%;
+                a{
+                    border-right: 1px solid #dee0ea;
+                    border-bottom: 1px solid #dee0ea;
+                    padding: 0.20rem 0;
+                    display: block;
+                    background:#243d6a;
+                    font-weight: bold;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+/* 页面主要内容 */
+.battle{
+    padding:0.20rem;
+    background: #e5f1ff;
+    margin: 0.30rem 0.16rem; 
+    border: 1px solid #696;
+    @include border-radius(0.16rem);
+    @include box-shadow(#666 0px 0px 0.20rem);
+    background: #f4f6fa;
+    .verse_name{
+        font-size: 18px;
+        font-family: "黑体";
+        color: #333;
+        margin: 0.20rem 0;
+    }
+    .away_logo,.home_logo{
+        float:left;
+        width:25%;
+        text-align: center;
+        margin-bottom: 0.20rem;
+        .logo_name{
+            margin-top: 0.10rem;
+        }
+        .logo_img{
+            img{
+                border:1px solid #ccc; 
+            }
+        }
+    }
+    .away_injury,.home_injury,.bets_rate{
+        float:right;
+        width:4.00rem;
+        margin-bottom: 0.30rem;
+        table{
+            margin-top:0;
+            border: 1px solid #dee0ea;   
+            th,td{
+                border: 1px solid #dee0ea;
+                padding-left: 0.10rem;
+                background:#fff;
+            }
+            th{
+                font-weight: bold;
+                padding-left: 5px;
+                @include background(linear-gradient(top,#f1f2f8,#e2e4ed));     
+            }
+            .mvp{
+               color:#f00;
+               font-weight: bold;
+            }
+        }
+    }
+    .bets_rate{
+        float:none;
+        width:auto;
+        margin-bottom:0;
+        table{
+            border-collapse:separate;
+            border-spacing:1px;
+            td{
+                @include background(linear-gradient(top,#fff,#e4e5ec));
+            }
+            .rate{
+                color:#e36c09;
+                font-weight: bold;
+            }
+        }
+    }
+    .keys{
+        .keys_title{
+            font-size: 16px;
+            margin: 0.20rem 0;
+            font-weight: bold;
+        }
+        .keys_des{
+            font-size: 14px;
+            color:#550000;
+            li{
+                margin-bottom: 0.16rem;
+            }
+        }
+    }
+}
+
+/* 页面底部信息 */
+.bottom{
+    width:100%;
+    height:0.08rem;
+    margin: 0;
+    padding: 0;
+}

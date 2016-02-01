@@ -1,0 +1,32 @@
+html{
+    font-size:100px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+table{
+    width: 100%;
+    border-collapse:collapse;
+    border-spacing:0;
+    padding:0;
+}
+img{
+    margin:0;
+    padding:0;
+    width:100%;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    line-height: 22px;
+}
+.clear{
+    clear:both;
+    height:0px;
+    overflow:hidden;   
+}
+.english{
+    font-family:Consolas,"Courier New",Courier,FreeMono,monospace;
+}

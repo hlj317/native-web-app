@@ -1,0 +1,435 @@
+html{
+    font-size: 100px;
+}
+body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow-x: hidden;
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+
+.flex-box {
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: horizontal;
+    box-orient: horizontal;
+}
+
+.flex1 {
+    -webkit-box-flex: 1;
+    box-flex: 1;
+}
+.hide {
+    display: none;
+}
+/*
+    列表部分
+*/
+#main{
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+}
+.main-map{
+    height: .44rem;
+    width: .44rem;
+    background-color: rgba(0,0,0,.68);
+    border-radius: .05rem;
+    position: fixed;
+    right: .1rem;
+    bottom: .1rem;
+}
+.main-map-i{
+    display: block;
+    width: .26rem;
+    height: .23rem;
+    background: url(../../imgs/square/city/icon14.png) no-repeat;
+    background-size: 100%;
+    margin: .09rem auto;
+}
+#coord-detail{
+    background: #fff;
+}
+.coords-list{
+
+}
+#no-video{
+    padding-top: 1.6rem;
+    margin: 0 auto;
+    display: none;
+}
+#no-video i{
+    display: block;
+    width: 1rem;
+    height: .8rem;
+    background: url(../../imgs/square/city/no_video.png) no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+}
+#no-video p{
+    font-size: .15rem;
+    text-align: center;
+    color:#999;
+}
+.main-bottom{
+    padding: 0 0 .1rem 0;
+}
+.final-page{
+    display: none;
+    font-size: 16px;
+    text-align: center;
+    color: #ccc;
+    padding: .2rem 0;
+    margin: 0;
+}
+
+.coord{
+    height: .74rem;
+    border-bottom: .01rem solid #ebebeb;
+    /*background: #fff;*/
+}
+.coord.no-border{
+    border: none;
+}
+.coord-img{
+    height: .65rem;
+
+    width: .90rem;
+    margin: .04rem .05rem;
+    border-radius: .02rem;
+    display: block;
+    float: left;
+}
+.coord-des{
+    width: 1.64rem;
+    height: .55rem;
+    float: left;
+    overflow: hidden;
+    margin: .09rem 0;
+}
+.coord-des-ttl{
+    height: .25rem;
+    font-size: 16px;
+    line-height: .25rem;
+    color: #333;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.coord-des-addr{
+    margin: 0;
+    font-size: 14px;
+    line-height: .15rem;
+    color: #888;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.coord-loc{
+    width: .54rem;
+
+    float: left;
+    height: 0.74rem;
+}
+.coord-loc-icon{
+    display: block;
+
+    height: .20rem;
+    width: .14rem;
+    margin: .19rem auto .04rem;
+    background: url(../../imgs/square/city/icon15.png) no-repeat;
+    background-size: 100%;
+}
+.coord-loc-dist{
+    height: .18rem;
+
+    text-align: center;
+    font-size: 13px;
+    margin: 0;
+    color: #888;
+}
+
+
+/*
+    地图部分
+*/
+#coords-map{
+    position: absolute;/*百度地图的奇怪bug*/
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: #fff;
+}
+#coords-map.inview{
+    z-index: 10;
+}
+
+.map{
+    height: 100%;
+}
+.map .map-overlay-icon{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 70px;
+    width: 100px;
+}
+.map .map-overlay-sin{
+    background-image: url(../../imgs/square/city/icon20.png);
+}
+.map .map-overlay-sin.active{
+    z-index: 20;
+    background-image: url(../../imgs/square/city/icon21.png);
+}
+.map .map-overlay-icon img{
+    height: 55px;
+    display: block;
+    width: 98px;
+    border-radius: 5px;
+    margin: 1px;
+}
+.map .map-overlay-mul{
+    width: 98px;
+    height: 74px;
+    background: url(../../imgs/square/city/icon22.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+}
+.map .map-overlay-mul img{
+    height: 53px;
+    display: block;
+    width: 96px;
+    border-radius: 3px;
+    margin: 7px 1px 0;
+}
+.map .map-overlay-mul p{
+    height: 25px;
+    color: #fff;
+    min-width: 15px;
+    padding: 0 5px;
+    margin: 0;
+    border-radius: 24px;
+    background: #35a4ff;
+    line-height: 26px;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    top: -5px;
+    right: -7px;
+}
+.map .my-position{
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    box-shadow: 0px 0px 10px #999;
+    background-color: #35a4ff;
+    position: absolute;
+}
+.map-tools{
+}
+.type-select{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 13px;
+    margin: .08rem;
+    color: #fff;
+}
+.type-select-input{
+    background: rgba(0,0,0,.6);
+    border-radius: .03rem;
+    height: .33rem;
+    line-height: .33rem;
+    margin-bottom: .01rem;
+    padding: 0 .13rem;
+    width: .74rem;
+}
+.type-select-input p{
+    margin: 0;
+}
+.type-select-input span{
+    height: .06rem;
+    width: .1rem;
+    display: block;
+    background: url(../../imgs/square/city/arrow3.png) no-repeat;
+    background-size: 100%;
+    margin: .13rem 0 .13rem .1rem;
+    -webkit-transform: rotate(180deg);
+}
+.type-select.open .type-select-input span{
+    -webkit-transform: rotate(0deg);
+}
+.type-select-options{
+    border-radius: .03rem;
+    overflow: hidden;
+    display: none;
+}
+.type-select.open .type-select-options{
+    display: block;
+}
+.type-select-options ul{}
+.type-select-options li{
+    background: rgba(0,0,0,.6);
+    height: .33rem;
+    line-height: .33rem;
+    padding: 0 .13rem;
+}
+.map-tools .map-icon{
+    height: .42rem;
+    width: .42rem;
+    background-color: rgba(255,255,255,0.68);
+    border: 1px solid #a0a0a0;
+    border-radius: .06rem;
+    margin: .09rem;
+}
+.map-tools .map-icon i{
+    height: .22rem;
+    width: .22rem;
+    display: block;
+    margin: .11rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.map-tools .map-back{
+    position: absolute;
+    left:0;
+    top:0;
+}
+.map-tools .map-back i{
+    background-image: url(../../imgs/square/city/arrow1.png);
+}
+.map-tools .map-focus{
+    position: absolute;
+    left:0;
+    bottom:0;
+}
+.map-tools .map-focus.inview{
+    bottom: .74rem;
+}
+.map-tools .map-focus i{
+    background-image: url(../../imgs/square/city/icon16.png);
+}
+.map-tools .map-bottom{
+    position: absolute;
+    bottom:-.76rem;
+    width: 100%;
+}
+.map-tools .map-bottom.inview{
+    bottom:0;
+}
+.map-tools #coord-detail .coord{
+    border:0;
+}
+#videoListExp{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#videoListExp .coords-list{
+    width: 3rem;
+    overflow: scroll;
+    max-height: 2.6rem;
+    top: 50%;
+    margin: 0 .1rem;
+    -webkit-border-radius: .05rem;
+    z-index: 20;
+    background: #fff;
+    position: absolute;
+}
+#videoListExp .coord .coord-des{
+    width: 1.44rem;
+}
+.exp-mask{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    top: 0;
+    z-index: 2;
+}
+.exp-close{
+    height: .44rem;
+    width: .44rem;
+    background-color: rgba(0,0,0,.68);
+    border-radius: .05rem;
+    position: fixed;
+    right: .1rem;
+    bottom: .1rem;
+
+}
+.exp-close-i{
+    display: block;
+    width: .25rem;
+    height: .25rem;
+    background-size: 100%;
+    margin: .09rem auto;
+    color: #fff;
+    line-height: .25rem;
+    font-style: normal;
+    text-align: center;
+    font-size: 26px;
+}
+/*
+    公共部分
+*/
+.inview-right{
+    -webkit-animation: move-in-right 0.5s linear;
+    -webkit-animation-fill-mode: forwards;
+}
+.inview-bottom{
+    -webkit-animation: move-in-bottom 0.5s linear;
+    -webkit-animation-fill-mode: forwards;
+}
+.outview-right{
+    -webkit-animation: move-out-right 0.5s linear;
+    -webkit-animation-fill-mode: forwards;
+}
+.outview-bottom{
+    -webkit-animation: move-out-bottom 0.5s linear;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes move-in-right {
+    0%{
+        left:110%;
+    }
+    100%{
+        left:0%;
+    }
+}
+@-webkit-keyframes move-out-right {
+    0%{
+        left:0%;
+    }
+    100%{
+        left:110%;
+    }
+}
+@-webkit-keyframes move-in-bottom {
+    0%{
+        bottom:-.76rem;
+    }
+    100%{
+        bottom:0;
+    }
+}
+@-webkit-keyframes move-out-bottom {
+    0%{
+        bottom:0;
+    }
+    100%{
+        bottom:-.76rem;
+    }
+}
+
+.BMap_cpyCtrl.BMap_noprint.anchorBL{
+    display: none;
+}

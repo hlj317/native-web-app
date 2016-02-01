@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<%include header.ejs%>
+</head>
+<body>
+
+<div id="main">
+    <div id="searchContainer"></div>
+    <div id="searchInput">
+        <input id="searchValue" type="text" value="">
+        <div id="searchBtn">搜索</div>
+    </div>
+    <div id="searchHistory">
+        <div class="searchTitle">最近搜索</div>
+        <div>
+            <ul></ul>
+        </div>
+    </div>
+    <div id="searchHot">
+        <div class="searchTitle">热门搜索</div>
+        <div>
+            <ul></ul>
+        </div>
+    </div>
+    <div id="videoList">
+        <div id="videoDiv"></div>
+        <div id="loading">
+            <span class="s0"></span>
+            <span class="s1"></span>
+            <span class="s2"></span>
+            <span class="s3"></span>
+        </div>
+        <div id="noVideo"></div>
+    </div>
+    <div id="toTopBtn">
+        <img id="top_img" />
+    </div>
+</div>
+
+<%include footer.ejs%>
+</body>
+</html>

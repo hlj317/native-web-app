@@ -1,0 +1,268 @@
+/* 背景色 */
+html{height: 100%;font-size: 100%!important;}
+body {font-family:'Microsoft Yahei',Arial,Simsun,sans-serif;background: #fff}
+body,ul,li,p,h2 {
+	padding:0;
+	margin:0;
+	border:0;
+	list-style: none;
+}
+.hide{display: none !important;}
+.hidden{visibility: hidden;}
+/* icon */
+.shareIcon{
+	background:url(../../imgs/square/play/share.png) no-repeat left center ;
+	width: 30px;
+	height: 20px;
+	background-size: 66%;
+	display: inline-block;
+	margin: 0 0 -4px 6px;
+}
+/* 头部广告 */
+.top{
+	padding: 0 2%;
+	
+}
+.top .logo {
+	background:url(../../imgs/square/play/share_logo.png) no-repeat left center ;
+	background-size: 12%;
+	padding: .5rem 0 .5rem 14%;
+	position:relative;
+}
+.top .logo p{
+	font-size:0.75rem;
+	color: #888;
+}
+.top .go {
+    position:absolute;
+    bottom: 0;
+    padding-bottom:.5rem;
+    right:0;
+}
+.top a{
+	padding: .2rem .5rem;
+	border-radius: 5px;
+	color:#009FE9;
+	border: 1px solid #009FE9;
+	text-decoration: none;
+    display: block;
+}
+.top .logo span {
+	font-size: 1rem;
+	color: #000;
+}
+/* video */
+#videoContainer{
+	width: 100%;
+	background: #000;
+	height: 180px;
+	position: relative;
+}
+#video{
+	width: 100%;
+	height: 180px;
+	margin: 0;
+	padding: 0;
+}
+#coverParent{
+	height: 100%;
+}
+#coverImg{
+	width: 100%;
+}
+/* 等待缓冲div */
+#videoLoading{
+	background: url(../../imgs/square/play/playVideoLoading.gif) no-repeat center #000;
+	background-size: 150px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 101;
+	color: #4c4c4c;
+	text-align: center;
+}
+#videoLoading.nobackground{
+	background: #000;
+}
+#videoLoading .refreshPage{
+	display: inline-block;
+    width: 80px;
+    font-size: 18px;
+    color: #eee;
+}
+/* 选项标题 */
+#optionTitle{
+	overflow: hidden;
+	line-height: 27px;
+	padding: 6px 0;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #DCDCDC;
+}
+#optionTitle div{
+	width: 50%;
+	float: left;
+	color: #888;
+	text-decoration: none;
+	text-align: center;
+	border-left: 1px solid #DCDCDC;
+	margin: 0 0 0 -1px;
+	font-size: .9375rem;
+}
+#optionTitle div.active{
+	color: #009FE9;
+}
+#optionParent{
+	line-height: 1.5;
+	font-size: 0.9rem;
+}
+/* 简介 */
+#option0{
+	display: none;
+	font-size: 0.9rem;
+}
+#option0.active{
+	display: block;
+}
+.option0-title, .option0-memo{
+	margin: 0 2.5%;
+}
+.option0-memo{
+	color: #a8a8a8;
+	line-height: 1.5;
+}
+/* 评论 */
+#option1{
+	position: relative;
+	display: none;
+}
+#option1.active{
+	display: block;
+}
+.option1-title{
+	position: relative;
+	margin: 0 5px 4px 5px;
+}
+.option1-totalCount{
+	color: #1B9EE2;
+}
+.option1-commitBtns{
+	position: absolute;
+	right: 0;
+	background: #1B9EE2;
+	border-radius: 5px;
+	padding: .2rem .8rem;
+	color: #fff;
+	text-decoration: none;
+}
+.option1-commentItem{
+	position: relative;
+	border-bottom: 1px solid #E0DFE2;
+}
+.option1-commentItem.selected{
+	background: #eee;
+}
+.option1-avatarPath{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	border-radius: 100%;
+}
+.option1-reviewer{
+	color: #1B9EE2;
+	width: 60%;
+}
+.option1-content{
+	padding: 10px 40px 10px 60px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.option1-createTime{
+	font-size: 12px;
+	color: #aaa;
+	position: absolute;
+	right: 5px;
+	top: 10px;
+}
+/* 返回到评论顶部 */
+.topBtn{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 26px;
+	line-height: 26px;
+	background: #fff;
+	opacity: 0.8;
+	text-align: center;
+}
+/* 地图 */
+#option2{
+	display: none;
+}
+#option2.active{
+	display: block;
+}
+.anchorBL{  
+    display:none;  
+}
+/* 底部广告 */
+.footer{
+	position: fixed;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+    z-index: 20;
+}
+
+.footer.isAd {
+	background: rgba(0,0,0,0.7);
+  padding: 0;
+  height: auto;
+}
+.footer.isAd img {
+	margin: auto;
+  display: block;
+}
+.footer.isAd .close {
+	margin-top: 6px;
+	margin-left: 2px;
+	background: url(../../imgs/square/play/close0.png) 0 0 no-repeat;
+}
+
+
+.footer .footerBG{
+	background: #000;
+	opacity: 0.7;
+	height: 100%;
+}
+.footer .footer-box{
+	position: absolute;
+	top: 10px;
+	width: 100%;
+}
+.footer .download{
+	padding: .2rem .4rem;
+	background: #1B9EE2;
+	display: inline-block;
+	border-radius: 5px;
+	color: #fff;
+	margin-left: .5rem;
+    font-size: .9375rem;
+	text-decoration: none;
+}
+.footer .close {
+	display: block;
+	text-indent: -999rem;
+	width: 1rem;
+	height: 1rem;
+	overflow: hidden;
+	position: absolute;
+	left: .3rem;
+	top: 0;
+	background: url(../../imgs/square/play/close.png) 0 0 no-repeat;
+	background-size: cover;
+}

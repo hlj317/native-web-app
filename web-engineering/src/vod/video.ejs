@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<%include header.ejs%>
+</head>
+<body>
+
+    <!-- 头部广告 -->
+    <!--<div class="top hide"><div class="logo"><span>萤石直播</span><p>视频直播、精彩短片，尽收眼底</p> <div class="go"><a href="/square/mobile/index.jsp?f=undefined">随便逛逛</a></div></div></div>-->
+    <!-- video容器 -->
+    <div id="videoContainer">
+        <!-- video标签 -->
+        <video  id="video" controls="controls" webkit-playsinline preload="none" >
+            <p>您的浏览器不支持HTML5 video标签</p>
+        </video>
+        <div id="coverParent" class="hide"><img id="coverImg"  /></div>
+        <!-- 等待缓冲div -->
+        <div id="videoLoading" class="hide"></div>
+    </div>
+
+    <div id="optionTitle">
+        <div class="active">评论</div>
+        <div>简介</div>
+        <div class="hide">地图</div>
+    </div>
+
+    <div id="optionParent">
+        <div id="option0"></div>
+        <div id="option1"  class="active"></div>
+        <div id="option2"></div>
+    </div>
+
+    <!-- 底部广告 -->
+    <div class="footer hide" style="bottom: -100px;">
+        <div class="footerBG"></div>
+        <div class="footer-box" style="font-size: 12px;">来一场说走就走的旅行<a href="http://download.ys7.com/ezvizsport/download.html" class="download">下载萤石运动APP</a>
+            <span class="close">X</span></div>
+    </div>
+
+<script src="http://api.map.baidu.com/api?v=1.5&ak=BVZmVCyHzPusTYduzI5i69GY"></script>
+<%include footer.ejs%>
+</body>
+</html>
