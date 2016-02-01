@@ -171,7 +171,7 @@ $(function () {
                     $toast.show();
                     setTimeout(function () {
                         $toast.hide();
-                    }, 20000000);
+                    }, 2000);
                 }
             },
             '#showLoadingToast': {
@@ -184,7 +184,7 @@ $(function () {
                     $loadingToast.show();
                     setTimeout(function () {
                         $loadingToast.hide();
-                    }, 20000000);
+                    }, 2000);
                 }
             }
         }

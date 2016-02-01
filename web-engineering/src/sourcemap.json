@@ -1,5 +1,5 @@
 {
-    "zepto": "js/libs/zepto",
+    "zepto": "js/libs/zepto_1.1.6",
 
     "underscore": "js/libs/underscore",
 

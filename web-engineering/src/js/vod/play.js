@@ -5,7 +5,7 @@ require('mobile-input');
 var $YS = require('squareYs');
 var $Util = require('util');
 var globalHost = '';
-var globalHostS = '';
+var globalHostS = 'http://square.ys7.com';
 var videoFile;
 var ImgsObj = {};    //图片对象集合
 var windowWidth = $(window).width() || document.body.scrollWidth;
@@ -215,7 +215,7 @@ $.ajax({
 
                 //加载失败重新加载处理
                 var tempRefreshCounter = 0;
-                $videoLoading.on('tap', '.refreshPage', function(){
+                $videoLoading.on('click', '.refreshPage', function(){
                     if(tempRefreshCounter < 1){
                         video.load();
                         video.play();
@@ -251,7 +251,7 @@ $.ajax({
                             } else if(from != 'app'){
                                 $('.footer').removeClass('hide');
                             }
-                            $("#closed").on('tap',function(){
+                            $("#closed").on('click',function(){
                                 $(".footer").addClass("hide");
                             });
                         };
@@ -593,7 +593,7 @@ var shareFun = function (pageH,pageW) {
             "position":"absolute",
             "bottom":"10px"
         });
-        $('#share').removeClass("hide").on('tap',function(){
+        $('#share').removeClass("hide").on('click',function(){
 
             $('#shade').css({
                     'width':pageW,
@@ -603,7 +603,7 @@ var shareFun = function (pageH,pageW) {
             $('#videoImg').show().css('height',$('video').height());
             $('video').css('visibility','hidden');
         });
-        $('#shade').on('tap',function(){
+        $('#shade').on('click',function(){
             $(this).hide();
             $('#videoImg').hide();
             $('video').css('visibility','visible');
@@ -800,7 +800,7 @@ function doGuanZhu(indexCode, followeredId, jianjieDom){
                 $btn.removeClass('hide');
             }
         });
-        $btn.on('tap',  function(){
+        $btn.on('click',  function(){
             var me = this;
             if(me.classList.contains('loading')){
                 return;
@@ -974,17 +974,17 @@ function switchFooter(type){
     }
     // 1 评论底部 2 广告底部 3 全部隐藏
     if(type == 1){
-        $('.footer').animate({
+        $('.footer').css({
             "bottom": "-190px"
         }, 100, function(){
             $commentFooter.removeClass('hide');
         })
     }else if(type == 2){
         $commentFooter.addClass('hide');
-        $('.footer').animate({"bottom": "0"}, 300);
+        $('.footer').css({"bottom": "0"}, 300);
     }else if(type == 3){
         $commentFooter.addClass('hide');
-        $('.footer').animate({
+        $('.footer').css({
             "bottom": "-190px"
         }, 100)
     }
@@ -1090,7 +1090,7 @@ function statplay(){
 }
 
 // 头部返回按钮事件
-$('#backBtn').tap(function(){
+$('#backBtn').click(function(){
     history.go(-1);
 });
 
@@ -1105,7 +1105,7 @@ function resetHeight(){
     setTimeout(resetHeight, 500); // 延时500毫秒保证个别手机有效
 }
 // 增加回复功能
-$(commentParent).on('tap', '.commentItem', function(){
+$(commentParent).on('click', '.commentItem', function(){
     var $me = $(this);
     if($me.hasClass('selected')){
         $me.removeClass('selected');
