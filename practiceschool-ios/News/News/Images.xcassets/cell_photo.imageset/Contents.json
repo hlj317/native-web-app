@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "filename" : "cell_photo.jpg"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "filename" : "cell_photo(1).jpg"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "963b15cb-2581-b84c-a797-5ec25b78112f++55" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "963b15cb-2581-b84c-a797-5ec25b78112f++55" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "86AFE351-22FD-4D34-B072-6088184423D5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "963b15cb-2581-b84c-a797-5ec25b78112f++55" : "News\/News\/SVPullToRefresh\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Practiceschool",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Practiceschool.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.0.0.241\/Civil-Platform",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "963b15cb-2581-b84c-a797-5ec25b78112f++55"
+    }
+  ]
+}
