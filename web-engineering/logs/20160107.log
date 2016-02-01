@@ -1,0 +1,71 @@
+[2016-01-07 10:35:21.515] [INFO] logInfo - 打印日志成功！
+[2016-01-07 10:38:07.958] [DEBUG] logInfo - We Write Logs with log4js
+[2016-01-07 10:38:07.959] [INFO] logInfo - You can find logs-files in the log-dir
+[2016-01-07 10:38:07.960] [WARN] logInfo - log-dir is a configuration-item in the log4js.json
+[2016-01-07 10:38:07.960] [ERROR] logInfo - In This Test log-dir is : './logs/log_test/'
+[2016-01-07 13:07:43.173] [DEBUG] logInfo - We Write Logs with log4js
+[2016-01-07 13:07:43.175] [INFO] logInfo - You can find logs-files in the log-dir
+[2016-01-07 13:07:43.175] [WARN] logInfo - log-dir is a configuration-item in the log4js.json
+[2016-01-07 13:07:43.175] [ERROR] logInfo - In This Test log-dir is : './logs/log_test/'
+[2016-01-07 15:07:02.084] [DEBUG] logInfo - We Write Logs with log4js
+[2016-01-07 15:07:02.086] [INFO] logInfo - You can find logs-files in the log-dir
+[2016-01-07 15:07:02.086] [WARN] logInfo - log-dir is a configuration-item in the log4js.json
+[2016-01-07 15:07:02.087] [ERROR] logInfo - In This Test log-dir is : './logs/log_test/'
+[2016-01-07 15:09:43.559] [DEBUG] logInfo - We Write Logs with log4js
+[2016-01-07 15:09:43.559] [INFO] logInfo - You can find logs-files in the log-dir
+[2016-01-07 15:09:43.560] [WARN] logInfo - log-dir is a configuration-item in the log4js.json
+[2016-01-07 15:09:43.560] [ERROR] logInfo - In This Test log-dir is : './logs/log_test/'
+[2016-01-07 15:10:46.817] [DEBUG] logInfo - We Write Logs with log4js
+[2016-01-07 15:10:46.818] [INFO] logInfo - You can find logs-files in the log-dir
+[2016-01-07 15:10:46.818] [WARN] logInfo - log-dir is a configuration-item in the log4js.json
+[2016-01-07 15:10:46.818] [ERROR] logInfo - In This Test log-dir is : './logs/log_test/'
+[2016-01-07 15:14:31.062] [DEBUG] logInfo - We Write Logs with log4js
+[2016-01-07 15:14:31.063] [INFO] logInfo - You can find logs-files in the log-dir
+[2016-01-07 15:14:31.063] [WARN] logInfo - log-dir is a configuration-item in the log4js.json
+[2016-01-07 15:14:31.063] [ERROR] logInfo - In This Test log-dir is : './logs/log_test/'
+[2016-01-07 15:14:44.317] [DEBUG] logInfo - We Write Logs with log4js
+[2016-01-07 15:14:44.318] [INFO] logInfo - You can find logs-files in the log-dir
+[2016-01-07 15:14:44.318] [WARN] logInfo - log-dir is a configuration-item in the log4js.json
+[2016-01-07 15:14:44.318] [ERROR] logInfo - In This Test log-dir is : './logs/log_test/'
+[2016-01-07 15:18:12.200] [DEBUG] logInfo - We Write Logs with log4js
+[2016-01-07 15:18:12.201] [INFO] logInfo - You can find logs-files in the log-dir
+[2016-01-07 15:18:12.201] [WARN] logInfo - log-dir is a configuration-item in the log4js.json
+[2016-01-07 15:18:12.201] [ERROR] logInfo - In This Test log-dir is : './logs/log_test/'
+[2016-01-07 15:18:32.754] [DEBUG] logInfo - We Write Logs with log4js
+[2016-01-07 15:18:32.754] [INFO] logInfo - You can find logs-files in the log-dir
+[2016-01-07 15:18:32.755] [WARN] logInfo - log-dir is a configuration-item in the log4js.json
+[2016-01-07 15:18:32.755] [ERROR] logInfo - In This Test log-dir is : './logs/log_test/'
+[2016-01-07 15:18:51.266] [DEBUG] logInfo - We Write Logs with log4js
+[2016-01-07 15:18:51.267] [INFO] logInfo - You can find logs-files in the log-dir
+[2016-01-07 15:18:51.267] [WARN] logInfo - log-dir is a configuration-item in the log4js.json
+[2016-01-07 15:18:51.267] [ERROR] logInfo - In This Test log-dir is : './logs/log_test/'
+[2016-01-07 15:19:25.839] [DEBUG] logInfo - We Write Logs with log4js
+[2016-01-07 15:19:25.840] [INFO] logInfo - You can find logs-files in the log-dir
+[2016-01-07 15:19:25.840] [WARN] logInfo - log-dir is a configuration-item in the log4js.json
+[2016-01-07 15:19:25.840] [ERROR] logInfo - In This Test log-dir is : './logs/log_test/'
+[2016-01-07 15:20:10.381] [DEBUG] logInfo - We Write Logs with log4js
+[2016-01-07 15:20:10.382] [INFO] logInfo - You can find logs-files in the log-dir
+[2016-01-07 15:20:10.382] [WARN] logInfo - log-dir is a configuration-item in the log4js.json
+[2016-01-07 15:20:10.382] [ERROR] logInfo - In This Test log-dir is : './logs/log_test/'
+[2016-01-07 15:20:44.232] [DEBUG] logInfo - We Write Logs with log4js
+[2016-01-07 15:20:44.233] [INFO] logInfo - You can find logs-files in the log-dir
+[2016-01-07 15:20:44.233] [WARN] logInfo - log-dir is a configuration-item in the log4js.json
+[2016-01-07 15:20:44.234] [ERROR] logInfo - In This Test log-dir is : './logs/log_test/'
+[2016-01-07 15:20:53.084] [ERROR] logInfo - [Error: error123]
+Error: error123
+    at Object.getWonderful (e:\vod-gulp\controllers\vod\hot.js:20:11)
+    at next (native)
+    at Object.dispatch (e:\vod-gulp\node_modules\koa-router\lib\router.js:331:14)
+    at next (native)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:65:19)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+    at process._tickDomainCallback (node.js:411:9)

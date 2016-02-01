@@ -1,0 +1,1987 @@
+[2016-01-12 10:47:17.767] [ERROR] logInfo - { [ReferenceError: e:\vod-gulp\src\vod\city.ejs:6
+    4|     <!--搜索框-->
+    5|     <div class="top-bar">
+ >> 6|         <div class="top-bar-section flex-box">
+    7|             <div id="city_selector" class="flex-box">
+    8|                 <p>全国</p>
+    9|                 <span></span>
+
+title is not defined] path: 'e:\\vod-gulp\\src\\vod\\city.ejs' }
+ReferenceError: e:\vod-gulp\src\vod\city.ejs:6
+    4|     <!--搜索框-->
+    5|     <div class="top-bar">
+ >> 6|         <div class="top-bar-section flex-box">
+    7|             <div id="city_selector" class="flex-box">
+    8|                 <p>全国</p>
+    9|                 <span></span>
+
+title is not defined
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:12:23)
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:15:9)
+    at returnedFn (e:\vod-gulp\node_modules\ejs\lib\ejs.js:493:17)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:481:16
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:146:5
+    at tryCatcher (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\util.js:26:23)
+    at Promise._resolveFromResolver (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:480:31)
+    at new Promise (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:70:37)
+    at promisify (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:139:10)
+    at Function.exports.ejs.render (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:477:10)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:167:27
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:101:5
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+[2016-01-12 11:15:25.698] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 11:16:29.229] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 11:16:42.546] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 11:16:55.192] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 11:16:59.358] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 15:28:13.548] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 15:28:23.899] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 15:28:27.726] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 15:28:33.753] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 16:25:38.431] [ERROR] logInfo - { [Error: ENOENT: no such file or directory, open 'e:\vod-gulp\src\vod\hot.ejs']
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'e:\\vod-gulp\\src\\vod\\hot.ejs' }
+Error: ENOENT: no such file or directory, open 'e:\vod-gulp\src\vod\hot.ejs'
+    at Error (native)
+[2016-01-12 16:25:38.434] [ERROR] logInfo - { [Error: ENOENT: no such file or directory, open 'e:\vod-gulp\src\vod\hot.ejs']
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'e:\\vod-gulp\\src\\vod\\hot.ejs' }
+Error: ENOENT: no such file or directory, open 'e:\vod-gulp\src\vod\hot.ejs'
+    at Error (native)
+[2016-01-12 16:25:41.512] [ERROR] logInfo - { [Error: ENOENT: no such file or directory, open 'e:\vod-gulp\src\vod\hot.ejs']
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'e:\\vod-gulp\\src\\vod\\hot.ejs' }
+Error: ENOENT: no such file or directory, open 'e:\vod-gulp\src\vod\hot.ejs'
+    at Error (native)
+[2016-01-12 16:40:09.520] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 16:41:32.888] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 16:41:36.934] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 16:43:16.611] [ERROR] logInfo - { [ReferenceError: e:\vod-gulp\src\vod\hot.ejs:59
+    57| <script data-debug src="/__build/ys-config.js"></script>
+    58| <script data-debug src="/__build/ys-common.js"></script>
+ >> 59| <script data-debug src="/__build/<%=entry%>.js"></script>
+    60| </body>
+    61| </html>
+
+entry is not defined] path: 'e:\\vod-gulp\\src\\vod\\hot.ejs' }
+ReferenceError: e:\vod-gulp\src\vod\hot.ejs:59
+    57| <script data-debug src="/__build/ys-config.js"></script>
+    58| <script data-debug src="/__build/ys-common.js"></script>
+ >> 59| <script data-debug src="/__build/<%=entry%>.js"></script>
+    60| </body>
+    61| </html>
+
+entry is not defined
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:23)
+    at returnedFn (e:\vod-gulp\node_modules\ejs\lib\ejs.js:493:17)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:481:16
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:146:5
+    at tryCatcher (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\util.js:26:23)
+    at Promise._resolveFromResolver (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:480:31)
+    at new Promise (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:70:37)
+    at promisify (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:139:10)
+    at Function.exports.ejs.render (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:477:10)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:167:27
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:101:5
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+[2016-01-12 16:43:41.843] [ERROR] logInfo - { [ReferenceError: e:\vod-gulp\src\vod\hot.ejs:59
+    57| <script data-debug src="/__build/ys-config.js"></script>
+    58| <script data-debug src="/__build/ys-common.js"></script>
+ >> 59| <script data-debug src="/__build/<%=entry%>.js"></script>
+    60| </body>
+    61| </html>
+
+entry is not defined] path: 'e:\\vod-gulp\\src\\vod\\hot.ejs' }
+ReferenceError: e:\vod-gulp\src\vod\hot.ejs:59
+    57| <script data-debug src="/__build/ys-config.js"></script>
+    58| <script data-debug src="/__build/ys-common.js"></script>
+ >> 59| <script data-debug src="/__build/<%=entry%>.js"></script>
+    60| </body>
+    61| </html>
+
+entry is not defined
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:23)
+    at returnedFn (e:\vod-gulp\node_modules\ejs\lib\ejs.js:493:17)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:481:16
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:146:5
+    at tryCatcher (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\util.js:26:23)
+    at Promise._resolveFromResolver (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:480:31)
+    at new Promise (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:70:37)
+    at promisify (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:139:10)
+    at Function.exports.ejs.render (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:477:10)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:167:27
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:101:5
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+[2016-01-12 16:43:42.757] [ERROR] logInfo - { [ReferenceError: e:\vod-gulp\src\vod\hot.ejs:59
+    57| <script data-debug src="/__build/ys-config.js"></script>
+    58| <script data-debug src="/__build/ys-common.js"></script>
+ >> 59| <script data-debug src="/__build/<%=entry%>.js"></script>
+    60| </body>
+    61| </html>
+
+entry is not defined] path: 'e:\\vod-gulp\\src\\vod\\hot.ejs' }
+ReferenceError: e:\vod-gulp\src\vod\hot.ejs:59
+    57| <script data-debug src="/__build/ys-config.js"></script>
+    58| <script data-debug src="/__build/ys-common.js"></script>
+ >> 59| <script data-debug src="/__build/<%=entry%>.js"></script>
+    60| </body>
+    61| </html>
+
+entry is not defined
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:23)
+    at returnedFn (e:\vod-gulp\node_modules\ejs\lib\ejs.js:493:17)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:481:16
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:146:5
+    at tryCatcher (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\util.js:26:23)
+    at Promise._resolveFromResolver (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:480:31)
+    at new Promise (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:70:37)
+    at promisify (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:139:10)
+    at Function.exports.ejs.render (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:477:10)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:167:27
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:101:5
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+[2016-01-12 16:44:38.864] [ERROR] logInfo - { [Error: ENOENT: no such file or directory, open 'e:\vod-gulp\assets\hot.ejs']
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'e:\\vod-gulp\\assets\\hot.ejs' }
+Error: ENOENT: no such file or directory, open 'e:\vod-gulp\assets\hot.ejs'
+    at Error (native)
+[2016-01-12 16:46:54.457] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 16:46:59.151] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 16:47:07.607] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 16:47:12.172] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 16:47:15.034] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 16:47:19.602] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 16:47:21.257] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 16:47:24.819] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 16:47:29.426] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 16:47:31.477] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 16:47:34.243] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 16:47:36.928] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 16:47:45.117] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 16:47:51.147] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 19:36:21.202] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 19:36:29.064] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 21:49:58.012] [ERROR] logInfo - { [ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     var basePath = <%=bathPath%>;
+    57|     var yundomain = <%=yundomain%>;
+    58|     var staticPath = <%=staticPath%>;
+    59|     alert(basePath);
+
+bathPath is not defined] path: 'e:\\vod-gulp\\src\\vod\\hot.ejs' }
+ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     var basePath = <%=bathPath%>;
+    57|     var yundomain = <%=yundomain%>;
+    58|     var staticPath = <%=staticPath%>;
+    59|     alert(basePath);
+
+bathPath is not defined
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:23)
+    at returnedFn (e:\vod-gulp\node_modules\ejs\lib\ejs.js:493:17)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:481:16
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:146:5
+    at tryCatcher (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\util.js:26:23)
+    at Promise._resolveFromResolver (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:480:31)
+    at new Promise (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:70:37)
+    at promisify (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:139:10)
+    at Function.exports.ejs.render (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:477:10)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:167:27
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:101:5
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+[2016-01-12 21:50:13.399] [ERROR] logInfo - { [ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     var basePath = <%=bathPath%>;
+    57|     var yundomain = <%=yundomain%>;
+    58|     var staticPath = <%=staticPath%>;
+    59|     alert(basePath);
+
+bathPath is not defined] path: 'e:\\vod-gulp\\src\\vod\\hot.ejs' }
+ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     var basePath = <%=bathPath%>;
+    57|     var yundomain = <%=yundomain%>;
+    58|     var staticPath = <%=staticPath%>;
+    59|     alert(basePath);
+
+bathPath is not defined
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:23)
+    at returnedFn (e:\vod-gulp\node_modules\ejs\lib\ejs.js:493:17)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:481:16
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:146:5
+    at tryCatcher (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\util.js:26:23)
+    at Promise._resolveFromResolver (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:480:31)
+    at new Promise (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:70:37)
+    at promisify (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:139:10)
+    at Function.exports.ejs.render (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:477:10)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:167:27
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:101:5
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+[2016-01-12 21:50:16.610] [ERROR] logInfo - { [ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     var basePath = <%=bathPath%>;
+    57|     var yundomain = <%=yundomain%>;
+    58|     var staticPath = <%=staticPath%>;
+    59|     alert(basePath);
+
+bathPath is not defined] path: 'e:\\vod-gulp\\src\\vod\\hot.ejs' }
+ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     var basePath = <%=bathPath%>;
+    57|     var yundomain = <%=yundomain%>;
+    58|     var staticPath = <%=staticPath%>;
+    59|     alert(basePath);
+
+bathPath is not defined
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:23)
+    at returnedFn (e:\vod-gulp\node_modules\ejs\lib\ejs.js:493:17)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:481:16
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:146:5
+    at tryCatcher (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\util.js:26:23)
+    at Promise._resolveFromResolver (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:480:31)
+    at new Promise (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:70:37)
+    at promisify (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:139:10)
+    at Function.exports.ejs.render (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:477:10)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:167:27
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:101:5
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+[2016-01-12 21:50:22.236] [ERROR] logInfo - { [ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     var basePath = <%=bathPath%>;
+    57|     var yundomain = <%=yundomain%>;
+    58|     var staticPath = <%=staticPath%>;
+    59|     alert(basePath);
+
+bathPath is not defined] path: 'e:\\vod-gulp\\src\\vod\\hot.ejs' }
+ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     var basePath = <%=bathPath%>;
+    57|     var yundomain = <%=yundomain%>;
+    58|     var staticPath = <%=staticPath%>;
+    59|     alert(basePath);
+
+bathPath is not defined
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:23)
+    at returnedFn (e:\vod-gulp\node_modules\ejs\lib\ejs.js:493:17)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:481:16
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:146:5
+    at tryCatcher (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\util.js:26:23)
+    at Promise._resolveFromResolver (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:480:31)
+    at new Promise (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:70:37)
+    at promisify (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:139:10)
+    at Function.exports.ejs.render (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:477:10)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:167:27
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:101:5
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+[2016-01-12 21:50:28.214] [ERROR] logInfo - { [ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     <!--var basePath = <%=bathPath%>;-->
+    57|     <!--var yundomain = <%=yundomain%>;-->
+    58|     <!--var staticPath = <%=staticPath%>;-->
+    59|     <!--alert(basePath);-->
+
+bathPath is not defined] path: 'e:\\vod-gulp\\src\\vod\\hot.ejs' }
+ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     <!--var basePath = <%=bathPath%>;-->
+    57|     <!--var yundomain = <%=yundomain%>;-->
+    58|     <!--var staticPath = <%=staticPath%>;-->
+    59|     <!--alert(basePath);-->
+
+bathPath is not defined
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:23)
+    at returnedFn (e:\vod-gulp\node_modules\ejs\lib\ejs.js:493:17)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:481:16
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:146:5
+    at tryCatcher (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\util.js:26:23)
+    at Promise._resolveFromResolver (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:480:31)
+    at new Promise (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:70:37)
+    at promisify (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:139:10)
+    at Function.exports.ejs.render (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:477:10)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:167:27
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:101:5
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+[2016-01-12 21:50:28.970] [ERROR] logInfo - { [ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     <!--var basePath = <%=bathPath%>;-->
+    57|     <!--var yundomain = <%=yundomain%>;-->
+    58|     <!--var staticPath = <%=staticPath%>;-->
+    59|     <!--alert(basePath);-->
+
+bathPath is not defined] path: 'e:\\vod-gulp\\src\\vod\\hot.ejs' }
+ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     <!--var basePath = <%=bathPath%>;-->
+    57|     <!--var yundomain = <%=yundomain%>;-->
+    58|     <!--var staticPath = <%=staticPath%>;-->
+    59|     <!--alert(basePath);-->
+
+bathPath is not defined
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:23)
+    at returnedFn (e:\vod-gulp\node_modules\ejs\lib\ejs.js:493:17)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:481:16
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:146:5
+    at tryCatcher (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\util.js:26:23)
+    at Promise._resolveFromResolver (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:480:31)
+    at new Promise (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:70:37)
+    at promisify (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:139:10)
+    at Function.exports.ejs.render (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:477:10)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:167:27
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:101:5
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+[2016-01-12 21:50:29.158] [ERROR] logInfo - { [ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     <!--var basePath = <%=bathPath%>;-->
+    57|     <!--var yundomain = <%=yundomain%>;-->
+    58|     <!--var staticPath = <%=staticPath%>;-->
+    59|     <!--alert(basePath);-->
+
+bathPath is not defined] path: 'e:\\vod-gulp\\src\\vod\\hot.ejs' }
+ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     <!--var basePath = <%=bathPath%>;-->
+    57|     <!--var yundomain = <%=yundomain%>;-->
+    58|     <!--var staticPath = <%=staticPath%>;-->
+    59|     <!--alert(basePath);-->
+
+bathPath is not defined
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:23)
+    at returnedFn (e:\vod-gulp\node_modules\ejs\lib\ejs.js:493:17)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:481:16
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:146:5
+    at tryCatcher (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\util.js:26:23)
+    at Promise._resolveFromResolver (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:480:31)
+    at new Promise (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:70:37)
+    at promisify (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:139:10)
+    at Function.exports.ejs.render (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:477:10)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:167:27
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:101:5
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+[2016-01-12 21:51:05.917] [ERROR] logInfo - { [ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     var basePath = "<%=bathPath%>"";
+    57|     var yundomain = "<%=yundomain%>";
+    58|     var staticPath = "<%=staticPath%>";
+    59|     alert(basePath);
+
+bathPath is not defined] path: 'e:\\vod-gulp\\src\\vod\\hot.ejs' }
+ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     var basePath = "<%=bathPath%>"";
+    57|     var yundomain = "<%=yundomain%>";
+    58|     var staticPath = "<%=staticPath%>";
+    59|     alert(basePath);
+
+bathPath is not defined
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:23)
+    at returnedFn (e:\vod-gulp\node_modules\ejs\lib\ejs.js:493:17)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:481:16
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:146:5
+    at tryCatcher (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\util.js:26:23)
+    at Promise._resolveFromResolver (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:480:31)
+    at new Promise (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:70:37)
+    at promisify (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:139:10)
+    at Function.exports.ejs.render (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:477:10)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:167:27
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:101:5
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+[2016-01-12 21:51:23.718] [ERROR] logInfo - { [ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     var basePath = "<%= bathPath%>"";
+    57|     var yundomain = "<%= yundomain%>";
+    58|     var staticPath = "<%= staticPath%>";
+    59|     alert(basePath);
+
+bathPath is not defined] path: 'e:\\vod-gulp\\src\\vod\\hot.ejs' }
+ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     var basePath = "<%= bathPath%>"";
+    57|     var yundomain = "<%= yundomain%>";
+    58|     var staticPath = "<%= staticPath%>";
+    59|     alert(basePath);
+
+bathPath is not defined
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:23)
+    at returnedFn (e:\vod-gulp\node_modules\ejs\lib\ejs.js:493:17)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:481:16
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:146:5
+    at tryCatcher (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\util.js:26:23)
+    at Promise._resolveFromResolver (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:480:31)
+    at new Promise (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:70:37)
+    at promisify (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:139:10)
+    at Function.exports.ejs.render (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:477:10)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:167:27
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:101:5
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+[2016-01-12 21:51:33.316] [ERROR] logInfo - { [ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     var basePath = "<%= bathPath%>";
+    57|     var yundomain = "<%= yundomain%>";
+    58|     var staticPath = "<%= staticPath%>";
+    59|     alert(basePath);
+
+bathPath is not defined] path: 'e:\\vod-gulp\\src\\vod\\hot.ejs' }
+ReferenceError: e:\vod-gulp\src\vod\hot.ejs:56
+    54| 
+    55| <script>
+ >> 56|     var basePath = "<%= bathPath%>";
+    57|     var yundomain = "<%= yundomain%>";
+    58|     var staticPath = "<%= staticPath%>";
+    59|     alert(basePath);
+
+bathPath is not defined
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:23)
+    at returnedFn (e:\vod-gulp\node_modules\ejs\lib\ejs.js:493:17)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:481:16
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:146:5
+    at tryCatcher (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\util.js:26:23)
+    at Promise._resolveFromResolver (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:480:31)
+    at new Promise (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:70:37)
+    at promisify (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:139:10)
+    at Function.exports.ejs.render (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:477:10)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:167:27
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:101:5
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+[2016-01-12 22:01:04.927] [ERROR] logInfo - { [ReferenceError: e:\vod-gulp\assets\hot.ejs:2
+    1| <!DOCTYPE HTML>
+ >> 2| <html>
+    3| <head>
+    4|     <meta charset="utf-8">
+    5|     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+basePath is not defined] path: 'e:\\vod-gulp\\assets\\hot.ejs' }
+ReferenceError: e:\vod-gulp\assets\hot.ejs:2
+    1| <!DOCTYPE HTML>
+ >> 2| <html>
+    3| <head>
+    4|     <meta charset="utf-8">
+    5|     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+basePath is not defined
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:17:23)
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:26:9)
+    at returnedFn (e:\vod-gulp\node_modules\ejs\lib\ejs.js:493:17)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:481:16
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:146:5
+    at tryCatcher (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\util.js:26:23)
+    at Promise._resolveFromResolver (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:480:31)
+    at new Promise (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:70:37)
+    at promisify (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:139:10)
+    at Function.exports.ejs.render (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:477:10)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:167:27
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:101:5
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+[2016-01-12 22:02:10.559] [ERROR] logInfo - { [ReferenceError: e:\vod-gulp\assets\hot.ejs:2
+    1| <!DOCTYPE HTML>
+ >> 2| <html>
+    3| <head>
+    4|     <meta charset="utf-8">
+    5|     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+basePath is not defined] path: 'e:\\vod-gulp\\assets\\hot.ejs' }
+ReferenceError: e:\vod-gulp\assets\hot.ejs:2
+    1| <!DOCTYPE HTML>
+ >> 2| <html>
+    3| <head>
+    4|     <meta charset="utf-8">
+    5|     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+basePath is not defined
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:17:23)
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:26:9)
+    at returnedFn (e:\vod-gulp\node_modules\ejs\lib\ejs.js:493:17)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:481:16
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:146:5
+    at tryCatcher (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\util.js:26:23)
+    at Promise._resolveFromResolver (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:480:31)
+    at new Promise (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:70:37)
+    at promisify (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:139:10)
+    at Function.exports.ejs.render (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:477:10)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:167:27
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:101:5
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+[2016-01-12 22:07:46.367] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 22:24:12.005] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 22:24:15.810] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 22:24:36.287] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 22:24:46.263] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 22:24:52.288] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 22:25:37.589] [ERROR] logInfo - { [ReferenceError: e:\vod-gulp\assets\play.ejs:2
+    1| <!DOCTYPE HTML>
+ >> 2| <html>
+    3| <head>
+    4| <%include header.ejs%>
+    5| <link href="../css/36888318.ys-common.min.css" rel="stylesheet"><link href="../css/e7fd92d0.play.min.css" rel="stylesheet"></head>
+
+basePath is not defined] path: 'e:\\vod-gulp\\assets\\play.ejs' }
+ReferenceError: e:\vod-gulp\assets\play.ejs:2
+    1| <!DOCTYPE HTML>
+ >> 2| <html>
+    3| <head>
+    4| <%include header.ejs%>
+    5| <link href="../css/36888318.ys-common.min.css" rel="stylesheet"><link href="../css/e7fd92d0.play.min.css" rel="stylesheet"></head>
+
+basePath is not defined
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:23:23)
+    at eval (eval at <anonymous> (e:\vod-gulp\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:32:9)
+    at returnedFn (e:\vod-gulp\node_modules\ejs\lib\ejs.js:493:17)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:481:16
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:146:5
+    at tryCatcher (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\util.js:26:23)
+    at Promise._resolveFromResolver (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:480:31)
+    at new Promise (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\node_modules\bluebird\js\main\promise.js:70:37)
+    at promisify (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:139:10)
+    at Function.exports.ejs.render (e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:477:10)
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:167:27
+    at e:\vod-gulp\node_modules\koa-views\node_modules\co-views\node_modules\co-render\node_modules\consolidate\lib\consolidate.js:101:5
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+[2016-01-12 22:25:49.235] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 22:26:14.108] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 22:26:19.704] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 22:26:41.885] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 22:41:45.549] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 22:42:12.072] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 22:42:17.501] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 22:42:22.184] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 22:46:20.613] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 22:46:23.044] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 23:01:50.440] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 23:01:58.876] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
+[2016-01-12 23:02:02.850] [ERROR] logInfo - { [Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "]
+  reason: 'IP: 127.0.0.1 is not in the cert\'s list: ',
+  host: '127.0.0.1',
+  cert: 
+   { subject: 
+      { C: 'CN',
+        ST: 'Zhejiang',
+        L: 'Hangzhou',
+        O: 'Hangzhou Hikvision Digital Technology Co.,Ltd.',
+        CN: '*.ys7.com' },
+     issuer: 
+      { C: 'US',
+        O: 'Entrust, Inc.',
+        OU: [Object],
+        CN: 'Entrust Certification Authority - L1C' },
+     subjectaltname: 'DNS:*.ys7.com, DNS:ys7.com',
+     infoAccess: { 'OCSP - URI': [Object], 'CA Issuers - URI': [Object] },
+     modulus: 'C8132ECB0D80B30B86CF0C5F051854CBEC2A7DCEB295961ACD6BAB68C6A9850E392EBD1BFCB57ABDE1A723C2971190271A0974FA7BF284E6BE6D45ABCA55DB814C957EDB013B7B2C3602AD1DB54851CA490C1174116727A08F0D408B6046D1042C73F6E17BAB2802414A17C7BB8C9AF4B72A881D7CC4BB4B0DD1EB335F1E7FC26C49AA67E6DADDAF768F6A53244C20B04FA973F48A179FA3C7628833B09A11E5C637FCBD38DFD9614D7E492E8AA6AD58DD113ED474F10D765EDDD0D01F14FEFC0BA786E3F7BE179E215EAF120E2E5E6891E470BDA25D9FCEAB4EF6345183675041F35EB73B42072BAF93EB9915D9115167BE444A105ED2BFF0D0AD297A16BF09',
+     exponent: '0x10001',
+     valid_from: 'Mar 24 00:38:33 2015 GMT',
+     valid_to: 'Mar 27 06:26:35 2016 GMT',
+     fingerprint: 'A9:2F:C6:26:D0:E6:C8:0F:0D:7A:3F:9C:A6:E4:7B:6D:4C:0C:BD:04',
+     ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+     serialNumber: '4C24C243',
+     raw: <Buffer 30 82 05 34 30 82 04 1c a0 03 02 01 02 02 04 4c 24 c2 43 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 81 b1 31 0b 30 09 06 03 55 04 06 13 02 55 53 ... > } }
+Error: Hostname/IP doesn't match certificate's altnames: "IP: 127.0.0.1 is not in the cert's list: "
+    at Object.checkServerIdentity (tls.js:191:15)
+    at TLSSocket.<anonymous> (_tls_wrap.js:1009:29)
+    at emitNone (events.js:67:13)
+    at TLSSocket.emit (events.js:166:7)
+    at TLSSocket._finishInit (_tls_wrap.js:570:8)
