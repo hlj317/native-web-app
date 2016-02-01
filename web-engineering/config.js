@@ -9,7 +9,7 @@ var config = {
     "routePort" : "8080",
     "production" : true,
     "hasLogin" : true,
-    "serverPath" : "http://127.0.0.1:8080"
+    "serverPath" : "http://square.ys7.com"
 }
 
 module.exports = config;

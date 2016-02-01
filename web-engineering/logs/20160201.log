@@ -1,0 +1,162 @@
+[2016-01-28 11:04:25.317] [ERROR] logInfo - [ReferenceError: jsessionid is not defined]
+ReferenceError: jsessionid is not defined
+    at Object.renderIndex (e:\vod-gulp\controllers\vod\hot.js:6:36)
+    at next (native)
+    at Object.dispatch (e:\vod-gulp\node_modules\koa-router\lib\router.js:331:14)
+    at next (native)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:65:19)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+[2016-01-28 11:04:33.778] [ERROR] logInfo - [ReferenceError: jsessionid is not defined]
+ReferenceError: jsessionid is not defined
+    at Object.renderIndex (e:\vod-gulp\controllers\vod\hot.js:6:36)
+    at next (native)
+    at Object.dispatch (e:\vod-gulp\node_modules\koa-router\lib\router.js:331:14)
+    at next (native)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:65:19)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+[2016-01-28 11:04:47.062] [ERROR] logInfo - [ReferenceError: jsessionid is not defined]
+ReferenceError: jsessionid is not defined
+    at Object.renderIndex (e:\vod-gulp\controllers\vod\hot.js:6:36)
+    at next (native)
+    at Object.dispatch (e:\vod-gulp\node_modules\koa-router\lib\router.js:331:14)
+    at next (native)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:65:19)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+[2016-01-28 11:06:15.355] [ERROR] logInfo - [ReferenceError: jsessionid is not defined]
+ReferenceError: jsessionid is not defined
+    at Object.renderIndex (e:\vod-gulp\controllers\vod\hot.js:6:36)
+    at next (native)
+    at Object.dispatch (e:\vod-gulp\node_modules\koa-router\lib\router.js:331:14)
+    at next (native)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:65:19)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+[2016-01-28 11:14:23.628] [ERROR] logInfo - [ReferenceError: jsessionid is not defined]
+ReferenceError: jsessionid is not defined
+    at Object.renderIndex (e:\vod-gulp\controllers\vod\hot.js:6:36)
+    at next (native)
+    at Object.dispatch (e:\vod-gulp\node_modules\koa-router\lib\router.js:331:14)
+    at next (native)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:65:19)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+[2016-01-28 11:14:45.155] [ERROR] logInfo - [ReferenceError: jsessionid is not defined]
+ReferenceError: jsessionid is not defined
+    at Object.renderIndex (e:\vod-gulp\controllers\vod\hot.js:6:36)
+    at next (native)
+    at Object.dispatch (e:\vod-gulp\node_modules\koa-router\lib\router.js:331:14)
+    at next (native)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:65:19)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+    at e:\vod-gulp\node_modules\koa\node_modules\co\index.js:54:5
+    at Object.co (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:50:10)
+    at Object.toPromise (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:118:63)
+    at next (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:99:29)
+    at onFulfilled (e:\vod-gulp\node_modules\koa\node_modules\co\index.js:69:7)
+[2016-02-01 12:37:22.394] [ERROR] logInfo - { [Error: connect ECONNREFUSED 127.0.0.1:8080]
+  code: 'ECONNREFUSED',
+  errno: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 8080 }
+Error: connect ECONNREFUSED 127.0.0.1:8080
+    at Object.exports._errnoException (util.js:856:11)
+    at exports._exceptionWithHostPort (util.js:879:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1064:14)
+[2016-02-01 12:37:22.434] [ERROR] logInfo - { [Error: connect ECONNREFUSED 127.0.0.1:8080]
+  code: 'ECONNREFUSED',
+  errno: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 8080 }
+Error: connect ECONNREFUSED 127.0.0.1:8080
+    at Object.exports._errnoException (util.js:856:11)
+    at exports._exceptionWithHostPort (util.js:879:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1064:14)
+[2016-02-01 12:37:22.435] [ERROR] logInfo - { [Error: connect ECONNREFUSED 127.0.0.1:8080]
+  code: 'ECONNREFUSED',
+  errno: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 8080 }
+Error: connect ECONNREFUSED 127.0.0.1:8080
+    at Object.exports._errnoException (util.js:856:11)
+    at exports._exceptionWithHostPort (util.js:879:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1064:14)

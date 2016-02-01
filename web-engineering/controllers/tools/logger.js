@@ -5,7 +5,7 @@ var log4js = require( 'log4js' ),
             {'type': 'console','category':'console'},
             {
                 'type': 'dateFile',
-                'filename':'../vod-gulp/logs/',
+                'filename':'../web-engineering/logs/',
                 'pattern':'yyyyMMdd.log',
                 'absolute':true,
                 'alwaysIncludePattern':true,
