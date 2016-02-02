@@ -4,6 +4,7 @@ require('mobile-input');
 
 var $YS = require('squareYs');
 var $Util = require('util');
+var FastClick = require('fastclick');
 var globalHost = '';
 var globalHostS = 'http://square.ys7.com';
 var videoFile;
@@ -13,6 +14,7 @@ var windowHeight = $(window).height() || document.body.scrollHeight;
 var videoHeight = ( ( windowWidth / 16 ) * 9 ); // video 默认 16:9 宽高比
 var username = getCookie('ASG_DisplayName') || ''; // 查看用户名称，未登录用户为空
 var nickname = username || ''; // 用户昵称，未登录用户可以由socket获得临时昵称
+FastClick.attach(document.body);   //为所有的dom都添加fastClick
 
 //获取图片对象
 var getImgsObj = function(){

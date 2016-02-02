@@ -1,13 +1,14 @@
 require('../../css/vod/hot');
 
-
+var FastClick = require('fastclick');
 var component = "dialog";
 if('dialog' === component) {
     require.ensure([], function(require) {
         var dialog = require('base');
     });
 }
-
+//为所有的dom都添加fastClick
+FastClick.attach(document.body);
 var swiper = require('swiper'),
     $YS = require('squareYs'),
     $SU = require('squareUtil'),

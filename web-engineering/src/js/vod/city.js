@@ -2,7 +2,11 @@ require('../../css/vod/city');
 
 var $YS = require('squareYs'),
     $SU = require('squareUtil'),
+    FastClick = require('fastclick'),
     Base64 = require('base64');
+
+//为所有的dom都添加fastClick
+FastClick.attach(document.body);
 
 //图片对象集合
 var ImgsObj = {

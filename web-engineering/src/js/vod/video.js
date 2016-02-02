@@ -7,6 +7,7 @@ var ImgsObj = {};    //图片对象集合
 var doT = require('doT');
 var $videoContainer = $('#videoContainer'); // video容器
 var $video = $('#video'); // video
+var FastClick = require('fastclick');
 var $coverImg = $('#coverImg'); // 封面图片IMG
 var $coverParent = $('#coverParent'); // 封面div
 var $videoLoading = $('#videoLoading'); // 缓冲显示
@@ -17,6 +18,8 @@ var $options = {
     "1" : $('#option1'), // 评论
     "2" : $('#option2')  // 地图
 };
+
+FastClick.attach(document.body);   //为所有的dom都添加fastClick
 
 //获取图片对象
 var getImgsObj = function(){
@@ -69,7 +72,7 @@ var globalData = {
     replyTo: '',
     replyCommentId: '',
     mappoint: null,
-    commentFixedHeight : window.innerHeight-53-videoHeight-45-45, // 评论区域高度限制
+    commentFixedHeight : window.innerHeight-23-videoHeight, // 评论区域高度限制
     getCommentData: {
         topicId:videoId,
         page:0,
@@ -116,7 +119,7 @@ if(username && window.MobileInput){
     replyClass = 'reply';
 }else{
     commentDes.style.height = (globalData.commentFixedHeight + 35) + 'px';//'240px';
-    $('.footer').animate({"bottom": "0"}, 300);
+    $('.footer').css({"bottom": "0"}, 300);
 }
 
 // 获取video信息
@@ -140,7 +143,7 @@ var
     haveAd = false,
     insertAd = function(haveAd) {
         // 隐藏底部广告
-        $('.footer').find('.close').on('tap', function(){
+        $('.footer').find('.close').on('click', function(){
             $('.footer').addClass('hide');
         });
 
@@ -234,9 +237,9 @@ function renderVideo(record){
     if( titleStr.length > 13 ){
         titleStr = titleStr.substr(0, 12) + '...';
     }
-    if($.os.ios){
-        titleStr = titleStr.substr(0, 6) + '...';
-    }
+    //if($.os.ios){
+    //    titleStr = titleStr.substr(0, 6) + '...';
+    //}
     document.title = titleStr;
     // 简介内容填充
     renderOption0(record);
@@ -266,7 +269,7 @@ function renderVideo(record){
     }, false);
 
     var tempRefreshCounter = 0;
-    $videoLoading.on('tap', '.refreshPage', function(){
+    $videoLoading.on('click', '.refreshPage', function(){
         if(tempRefreshCounter < 1){
             video.load();
             video.play();
@@ -408,7 +411,7 @@ topBtn.addEventListener('click', function(e){
     e.preventDefault();
 }, false);
 // 切换选项事件
-$optionTitle.on('tap', 'div', function(e){
+$optionTitle.on('click', 'div', function(e){
     if(this.className == 'active'){
         return;
     }
@@ -612,9 +615,9 @@ function switchFooter(type){
     }
     // 1 隐藏底部广告 2 显示底部广告
     if(type == 1){
-        $('.footer').animate({"bottom": "-100px" }, 100);
+        $('.footer').css({"bottom": "-100px" }, 100);
     }else{
-        $('.footer').animate({"bottom": "0"}, 300);
+        $('.footer').css({"bottom": "0"}, 300);
     }
 
 }

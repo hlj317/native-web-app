@@ -3,6 +3,7 @@ require('../../css/vod/collect');
 var $YS = require('squareYs'),
     $SU = require('squareUtil'),
     Base = require('base'),
+    FastClick = require('fastclick'),
     ImgsObj = {};    //图片对象集合
 
 ({
@@ -491,6 +492,7 @@ var $YS = require('squareYs'),
     //喜欢页面初始化
     init : function(){
         var me = this;
+        FastClick.attach(document.body);  //为所有的dom都添加fastClick
         me.versionHandle();
         me.getImgsObj();
         me.handleEvent();
