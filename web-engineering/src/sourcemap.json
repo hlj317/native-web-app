@@ -47,6 +47,10 @@
 
     "fastclick" : "js/utils/fastclick",
 
-    "weuiCss" : "css/libs/weui"
+    "weuiCss" : "css/libs/weui",
+
+    "iscroll4" : "js/utils/iscroll4",
+
+    "iscroll5" : "js/utils/iscroll5"
 
 }
