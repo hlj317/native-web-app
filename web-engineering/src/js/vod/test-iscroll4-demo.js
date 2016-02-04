@@ -1,4 +1,5 @@
 require("../../css/vod/iscroll4-demo");
+require("../../css/vod/a");
 var iScroll = require("iscroll4").iScroll;
 var myScroll,
 	pullDownEl, pullDownOffset,
