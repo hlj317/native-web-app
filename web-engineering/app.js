@@ -17,7 +17,7 @@ app.use( statics( path.join( __dirname, './assets')))
     this.body = this.request.body;
     yield next;
 });
-
+ 
 // use routes 调用路由
 routes( app );
 
