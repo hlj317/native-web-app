@@ -200,12 +200,12 @@ function makeConf(options) {
 
 //遍历src目录下所有的js文件
 function genEntries() {
-    var jsDir = path.resolve(srcDir, 'js/vod');   //相当于解析到此路径：src/js
+    var jsDir = path.resolve(srcDir, 'js/view-learn');   //相当于解析到此路径：src/js
     var names = fs.readdirSync(jsDir);
     var map = {};
 
     //公共类库
-    map["ys-common"] = ['commonJs','zepto','baidu','underscore','commonCss'];
+    map["ys-common"] = ['commonJs','zepto','baidu','underscore','resetCss','commonCss'];
 
     names.forEach(function(name) {
         var m = name.match(/(.+)\.js$/);

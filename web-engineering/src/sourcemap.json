@@ -5,6 +5,10 @@
 
     "commonCss": "css/public/public",
 
+    "normalizeCss": "css/libs/normalize",
+
+    "resetCss": "css/libs/reset",
+
     "animateCss": "css/libs/animate",
 
     "baidu" : "js/utils/baidu",
