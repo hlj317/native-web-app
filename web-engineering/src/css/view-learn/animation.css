@@ -1,0 +1,120 @@
+html {
+    font-size: 12px !important;
+    height : 100%;
+}
+a,img,button,input,textarea,div,span{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight:rgba(0,0,0,0);
+    -webkit-text-size-adjust:none;
+    -webkit-outline:none;
+}
+body {
+    margin:0;
+    padding:0;
+    width:100%;
+    background-color:#fff;
+    position:absolute;
+    overflow-x:hidden;
+    font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+}
+/*刷新按钮*/
+.tools{
+    font-size: 26px;
+    float:right;
+    overflow: hidden;
+    text-align: center;
+    line-height: 50px;
+    width:100px;
+    height:50px;
+    background:#c03131;
+    border-radius: 5px;
+    color:#fff;
+    font-weight: bold;
+    margin:10px;
+}
+.demo{
+    clear:both;
+    overflow: hidden;
+
+    /*开启3D动画,设置位移距离*/
+    -webkit-transform: translate3d(230px,30px,-200px);
+    -moz-transform: translate3d(230px,30px,-200px);
+    -ms-transform: translate3d(230px,30px,-200px);
+    -o-transform: translate3d(230px,30px,-200px);
+    transform: translate3d(230px,30px,-200px);
+
+    /*设置动画效果*/
+    -webkit-transition: -webkit-transform 2.3s ease-in-out;
+    transition: transform 2.3s ease-in-out;
+
+    width:100px;
+    height:100px;
+    background: #f00;
+}
+
+.left-in, .left-out {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  background: #000;
+  width:40px;
+  height:40px;
+}
+
+@-webkit-keyframes left-in {
+  0% {
+    -webkit-transform: translate3d(100px, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes left-in {
+  0% {
+    transform: translate3d(100px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.left-in {
+  -webkit-animation-name: left-in;
+  animation-name: left-in;
+}
+
+@-webkit-keyframes left-out {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(100px, 0, 0);
+  }
+}
+@keyframes left-out {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(100px, 0, 0);
+  }
+}
+.left-out {
+  -webkit-animation-name: left-out;
+  animation-name: left-out;
+}
+
+/*
+总结
+transition动画与animation动画的区别在于：
+
+1、transition动画只能定义开始和结束位置，中间无法定义；而keyframes则可以定义n帧作为中间的过渡帧。
+
+2、对于切入切出动画来说，transition动画我们只需添加删除一个class即可完成，而animation动画则需要切换两个class，再在最后删除class，比较复杂。
+
+3、如果你的动画不需要定制中间帧，那直接使用transition动画即可，切换一个class就可以了，运动结束时候可以js调用transitionend函数，而如果需要定制中间帧，那么还是animation，当然animation的事件有三个animationstart，animationiteration，animationend
+*/

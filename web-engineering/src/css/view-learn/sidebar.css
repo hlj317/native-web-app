@@ -1,0 +1,51 @@
+html {
+    font-size: 12px !important;
+    height : 100%;
+}
+a,img,button,input,textarea,div,span{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight:rgba(0,0,0,0);
+    -webkit-text-size-adjust:none;
+    -webkit-outline:none;
+}
+body {
+    margin:0;
+    padding:0;
+    width:100%;
+    background-color:#fff;
+    position:absolute;
+    overflow-x:hidden;
+    font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+}
+/*刷新按钮*/
+.tools{
+    font-size: 26px;
+    float:right;
+    overflow: hidden;
+    text-align: center;
+    line-height: 50px;
+    width:100px;
+    height:50px;
+    background:#c03131;
+    border-radius: 5px;
+    color:#fff;
+    font-weight: bold;
+    margin:10px;
+}
+.icon-msg{
+    display: inline-block;
+    vertical-align: -2px;
+    background:url(../../imgs/test/icon-msg.png) no-repeat;
+    /*整个sprite图片大小的一半，注意不要采用50%，百分比是按元素大小来计算的，而不是背景图片大小*/
+    background-size:26px 26px;  
+}
+.icon-info{
+    background-position: -14px 0;
+    width: 12px;
+    height: 12px;
+}
+.icon-alert{
+    background-position: 0 -14px;
+    width: 12px;
+    height: 12px;
+}
