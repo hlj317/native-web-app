@@ -15,6 +15,7 @@ var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;   //公共模块
 var srcDir = path.resolve(process.cwd(), 'src');
 var assets = 'assets/';
 var sourceMap = require('./src/sourcemap.json');    //映射文件
+var Dirs = ["vod","view-learn"];   //需要打包的目录
 
 var excludeFromStats = [
     /node_modules[\\\/]/
@@ -160,39 +161,45 @@ function makeConf(options) {
             })
         );
 
-        // 自动生成入口文件，入口js名必须和入口文件名相同
-        // 例如，a页的入口文件是a.html，那么在js目录下必须有一个a.js作为入口文件
-        var htmlDir = path.resolve(srcDir,'vod');   //相当于解析到此路径：src/js
-        var pages = fs.readdirSync(htmlDir);
+        var dirIndex = 0;
 
-        pages.forEach(function(filename) {
-            var m = filename.match(/(.+)\.ejs/);
+        while(Dirs[dirIndex]) {
 
-            if (m) {
-                // @see https://github.com/kangax/html-minifier
-                var conf = {
-                    template: path.resolve(htmlDir, filename),   //srcDir:'./src'(引用文件)
+            // 自动生成入口文件，入口js名必须和入口文件名相同
+            // 例如，a页的入口文件是a.html，那么在js目录下必须有一个a.js作为入口文件
+            var htmlDir = path.resolve(srcDir, Dirs[dirIndex++]);   //相当于解析到此路径：src/js
+            var pages = fs.readdirSync(htmlDir);
+
+            pages.forEach(function (filename) {
+                var m = filename.match(/(.+)\.ejs/);
+
+                if (m) {
                     // @see https://github.com/kangax/html-minifier
-                    // minify: {
-                    //     collapseWhitespace: true,
-                    //     removeComments: true
-                    // },
-                    filename: filename  //(输出文件)
-                    // ,
-                    // inject: 'body',
-                    // chunks: ['vendors', 'a']
-                };
+                    var conf = {
+                        template: path.resolve(htmlDir, filename),   //srcDir:'./src'(引用文件)
+                        // @see https://github.com/kangax/html-minifier
+                        // minify: {
+                        //     collapseWhitespace: true,
+                        //     removeComments: true
+                        // },
+                        filename: filename  //(输出文件)
+                        // ,
+                        // inject: 'body',
+                        // chunks: ['vendors', 'a']
+                    };
 
-                if (m[1] in config.entry) {
-                    conf.inject = 'body';
-                    conf.chunks = ['ys-common','vendors',m[1]];
+                    if (m[1] in config.entry) {
+                        conf.inject = 'body';
+                        conf.chunks = ['ys-common', 'vendors', m[1]];
+                    }
+                    //HtmlWebpackPlugin支持从模板生成html文件，生成的html里边可以正确解决js打包之后的路径、文件名问题
+                    config.plugins.push(new HtmlWebpackPlugin(conf));
                 }
-                //HtmlWebpackPlugin支持从模板生成html文件，生成的html里边可以正确解决js打包之后的路径、文件名问题
-                config.plugins.push(new HtmlWebpackPlugin(conf));
-            }
-        });
+            });
 
-        //config.plugins.push(new UglifyJsPlugin());    //js压缩
+            //config.plugins.push(new UglifyJsPlugin());    //js压缩
+
+        }
     }
 
     return config;
@@ -200,19 +207,24 @@ function makeConf(options) {
 
 //遍历src目录下所有的js文件
 function genEntries() {
-    var jsDir = path.resolve(srcDir, 'js/view-learn');   //相当于解析到此路径：src/js
-    var names = fs.readdirSync(jsDir);
+
     var map = {};
-
+    var dirIndex = 0;
     //公共类库
-    map["ys-common"] = ['commonJs','zepto','baidu','underscore','resetCss','commonCss'];
+    map["ys-common"] = ['commonJs', 'zepto', 'baidu', 'underscore', 'resetCss', 'commonCss'];
 
-    names.forEach(function(name) {
-        var m = name.match(/(.+)\.js$/);
-        var entry = m ? m[1] : '';
-        var entryPath = entry ? path.resolve(jsDir, name) : '';
-        if (entry) map[entry] = entryPath;
-    });
+    while(Dirs[dirIndex]) {
+
+        var jsDir = path.resolve(srcDir, 'js/' + Dirs[dirIndex++]);   //相当于解析到此路径：src/js
+        var names = fs.readdirSync(jsDir);
+        names.forEach(function (name) {
+            var m = name.match(/(.+)\.js$/);
+            var entry = m ? m[1] : '';
+            var entryPath = entry ? path.resolve(jsDir, name) : '';
+            if (entry) map[entry] = entryPath;
+        });
+
+    }
 
     //返回的map对象如下：
     // map = {
