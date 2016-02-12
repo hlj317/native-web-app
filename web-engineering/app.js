@@ -14,6 +14,8 @@ app.use( statics( path.join( __dirname, './assets')))
     .use( render( path.join( __dirname, './assets' ), { default: 'ejs' }))
     .use( bodyParser() )
     .use( function *( next ){
+    // ignore favicon
+    if (this.path === '/favicon.ico') return;
     this.body = this.request.body;
     yield next;
 });
