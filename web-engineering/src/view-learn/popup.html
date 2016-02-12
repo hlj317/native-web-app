@@ -9,15 +9,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <!--忽略页面中的数字识别为电话号码和邮箱地址-->
     <meta name="format-detection"content="telephone=no, email=no" />
-    <title>sidebar</title>
+    <title>popup</title>
 </head>
 <body>
-<header id="header" class="header fixed-top">
-    <span id="panelSwitch" class="btn-list fr"></span>
-    <h1 class="page-title">panel测试</h1>
+<header id="header" class="header">
+    <h1 class="page-title">popup 测试</h1>
 </header>
 <div id="main" class="wrap-page">
-    <section class="page" id="wrap"><div class="page-inner">
+    <section class="page">
+        <p><span class="popup-page-link test-link" data-popup-page="popup-page-test">点击测试 popup page</span></p>
+        <p><span class="popup-over-link test-link" data-popup-over="popup-over-test">点击测试 popup over</span></p>
         <p>君子曰：学不可以已。</p>
         <p>青，取之于蓝，而青于蓝；冰，水为之，而寒于水。木直中绳，輮以为轮，其曲中规。虽有槁暴（pù），不复挺者，輮使之然也。故木受绳则直，金就砺则利，君子博学而日参省乎己，则知明而行无过矣。</p>
         <p>故不登高山，不知天之高也；不临深溪，不知地之厚也；不闻先王之遗言，不知学问之大也。干、越、夷、貉之子，生而同声，长而异俗，教使之然也。诗曰：“嗟尔君子，无恒安息。靖共尔位，好是正直。神之听之，介尔景福。”神莫大于化道，福莫长于无祸。</p>
@@ -30,21 +31,31 @@
         <p>青，取之于蓝，而青于蓝；冰，水为之，而寒于水。木直中绳，輮以为轮，其曲中规。虽有槁暴（pù），不复挺者，輮使之然也。故木受绳则直，金就砺则利，君子博学而日参省乎己，则知明而行无过矣。</p>
         <p>故不登高山，不知天之高也；不临深溪，不知地之厚也；不闻先王之遗言，不知学问之大也。干、越、夷、貉之子，生而同声，长而异俗，教使之然也。诗曰：“嗟尔君子，无恒安息。靖共尔位，好是正直。神之听之，介尔景福。”神莫大于化道，福莫长于无祸。</p>
         <p>吾尝终日而思矣，不如须臾之所学也；吾尝跂而望矣，不如登高之博见也。登高而招，臂非加长也，而见者远；顺风而呼，声非加疾也，而闻者彰。假舆马者，非利足也，而致千里；假舟楫者，非能水也，而绝江河。君子生非异也，善假于物也。</p>
-    </div></section>
+    </section>
 </div>
-<footer class="footer">footer</footer>
-<section class="panel" id="panelNav">
-    <ul class="nav-aside">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">List</a></li>
-        <li><a href="#">Demo</a></li>
-        <li><a href="#">Download</a></li>
-    </ul>
+<div class="overlay" id="overlay">
+    <section class="popup-over popup-over-test" style="display:none">
+        <p>popup over</p>
+        <p>青，取之于蓝，而青于蓝；冰，水为之，而寒于水。木直中绳，輮以为轮，其曲中规。虽有槁暴（pù），不复挺者，輮使之然也。故木受绳则直，金就砺则利，君子博学而日参省乎己，则知明而行无过矣。</p>
+    </section>
+</div>
+<section class="popup-page popup-page-test">
+    <div class="popup-hd">
+        劝学<span class="btn-close">&times;</span>
+    </div>
+    <div class="popup-bd">
+        <p>青，取之于蓝，而青于蓝；冰，水为之，而寒于水。木直中绳，輮以为轮，其曲中规。虽有槁暴（pù），不复挺者，輮使之然也。故木受绳则直，金就砺则利，君子博学而日参省乎己，则知明而行无过矣。</p>
+        <p>青，取之于蓝，而青于蓝；冰，水为之，而寒于水。木直中绳，輮以为轮，其曲中规。虽有槁暴（pù），不复挺者，輮使之然也。故木受绳则直，金就砺则利，君子博学而日参省乎己，则知明而行无过矣。</p>
+        <p>青，取之于蓝，而青于蓝；冰，水为之，而寒于水。木直中绳，輮以为轮，其曲中规。虽有槁暴（pù），不复挺者，輮使之然也。故木受绳则直，金就砺则利，君子博学而日参省乎己，则知明而行无过矣。</p>
+        <p>青，取之于蓝，而青于蓝；冰，水为之，而寒于水。木直中绳，輮以为轮，其曲中规。虽有槁暴（pù），不复挺者，輮使之然也。故木受绳则直，金就砺则利，君子博学而日参省乎己，则知明而行无过矣。</p>
+        <p>青，取之于蓝，而青于蓝；冰，水为之，而寒于水。木直中绳，輮以为轮，其曲中规。虽有槁暴（pù），不复挺者，輮使之然也。故木受绳则直，金就砺则利，君子博学而日参省乎己，则知明而行无过矣。</p>
+        <p>青，取之于蓝，而青于蓝；冰，水为之，而寒于水。木直中绳，輮以为轮，其曲中规。虽有槁暴（pù），不复挺者，輮使之然也。故木受绳则直，金就砺则利，君子博学而日参省乎己，则知明而行无过矣。</p>
+        <p>青，取之于蓝，而青于蓝；冰，水为之，而寒于水。木直中绳，輮以为轮，其曲中规。虽有槁暴（pù），不复挺者，輮使之然也。故木受绳则直，金就砺则利，君子博学而日参省乎己，则知明而行无过矣。</p>
+    </div>
 </section>
 
-
 <script data-debug src="/__build/ys-common.js"></script>
-<script data-debug src="/__build/sidebar.js"></script>
+<script data-debug src="/__build/popup.js"></script>
 
 </body>
 </html>

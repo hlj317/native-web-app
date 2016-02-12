@@ -17,35 +17,94 @@ body {
     overflow-x:hidden;
     font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
 }
-/*刷新按钮*/
-.tools{
-    font-size: 26px;
-    float:right;
-    overflow: hidden;
+.header,.footer,.wrap-page{
+    position:absolute;
+    left:0;
+    right:0;
+}
+.header,.footer{
+    height:44px;
+    background-color: #fff;
     text-align: center;
-    line-height: 50px;
-    width:100px;
-    height:50px;
-    background:#c03131;
-    border-radius: 5px;
-    color:#fff;
-    font-weight: bold;
-    margin:10px;
+    z-index:900;
+    line-height:44px;
 }
-.icon-msg{
-    display: inline-block;
-    vertical-align: -2px;
-    background:url(../../imgs/test/icon-msg.png) no-repeat;
-    /*整个sprite图片大小的一半，注意不要采用50%，百分比是按元素大小来计算的，而不是背景图片大小*/
-    background-size:26px 26px;  
+.header{
+    top: 0;
+    border-bottom: 1px solid #f00;
 }
-.icon-info{
-    background-position: -14px 0;
-    width: 12px;
-    height: 12px;
+.footer{
+    bottom: 0;
+    border-top: 1px solid #f00;
 }
-.icon-alert{
-    background-position: 0 -14px;
-    width: 12px;
-    height: 12px;
+.page-title{
+    line-height:44px;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float: right;
+}
+.btn-list{
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    cursor: pointer;
+}
+.btn-list:before{
+    content:"";
+    width:20px;
+    height: 2px;
+    background-color: #ccc;
+    display:inline-block;
+    box-shadow: 0 7px 0 #ccc, 0 -7px 0 #ccc;
+}
+.wrap-page{
+    top: 44px;
+    bottom: 44px;
+    overflow: hidden;
+}
+.page{
+    position: relative;
+    padding: 10px;
+}
+.page p{
+    margin-bottom: 10px;
+}
+/* panel */
+.panel {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: 0;
+    z-index: 980;
+    width: 120px;
+    background-color: #333;
+    -webkit-transform: translate3d(-120px, 0, 0);
+    transform: translate3d(-120px, 0, 0);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.panel.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.nav-aside {
+    line-height: 40px;
+}
+.nav-aside li {
+    border-bottom: 1px solid #222;
+    color: #fff;
+}
+.nav-aside li a {
+    color: #fff;
+    padding: 0 5px;
+    display: block;
+}
+.nav-aside li a:hover, .nav-aside li a:active, .nav-aside li a.active {
+    background-color: #404040;
 }

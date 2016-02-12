@@ -1,4 +1,10 @@
 require("../../css/view-learn/sidebar");
-$(".tools").on("click",function(){
-	window.location.reload();
-})
+var $panelNav = $('#panelNav');
+$('#panelSwitch').click(function(){
+    $panelNav.css({"opacity":1});
+    if($panelNav.hasClass('active')){
+        $panelNav.removeClass('active');
+    }else{
+        $panelNav.addClass('active');
+    }
+});

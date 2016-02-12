@@ -1,0 +1,113 @@
+html {
+    font-size: 12px !important;
+    height : 100%;
+}
+a,img,button,input,textarea,div,span{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight:rgba(0,0,0,0);
+    -webkit-text-size-adjust:none;
+    -webkit-outline:none;
+}
+body {
+    margin:0;
+    padding:0;
+    width:100%;
+    background-color:#fff;
+    position:absolute;
+    overflow-x:hidden;
+    font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+}
+.header,.footer,.wrap-page{
+    position:absolute;
+    left:0;
+    right:0;
+}
+.header,.footer{
+    height:44px;
+    background-color: #fff;
+    text-align: center;
+    z-index:900;
+    line-height:44px;
+}
+.header{
+    top: 0;
+    border-bottom: 1px solid #f00;
+}
+.footer{
+    bottom: 0;
+    border-top: 1px solid #f00;
+}
+.page-title{
+    line-height:44px;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float: right;
+}
+.btn-list{
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    cursor: pointer;
+}
+.btn-list:before{
+    content:"";
+    width:20px;
+    height: 2px;
+    background-color: #ccc;
+    display:inline-block;
+    box-shadow: 0 7px 0 #ccc, 0 -7px 0 #ccc;
+}
+.wrap-page{
+    top: 44px;
+    bottom: 44px;
+    overflow-y:auto;
+    -webkit-overflow-scrolling: touch;
+}
+.page{
+    position: relative;
+    padding: 10px;
+}
+.page p{
+    margin-bottom: 10px;
+}
+/* panel */
+.panel {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: 0;
+    z-index: 980;
+    width: 120px;
+    background-color: #333;
+    -webkit-transform: translate3d(-120px, 0, 0);
+    transform: translate3d(-120px, 0, 0);
+}
+
+body.has-panel {
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+body.panel-active{
+    -webkit-transform: translate3d(120px, 0, 0);
+    transform: translate3d(120px, 0, 0);
+    overflow-x:hidden;
+}
+
+.nav-aside {
+    line-height: 40px;
+}
+.nav-aside li {
+    border-bottom: 1px solid #222;
+    color: #fff;
+}
+.nav-aside li a {
+    color: #fff;
+    padding: 0 5px;
+    display: block;
+}
+.nav-aside li a:hover, .nav-aside li a:active, .nav-aside li a.active {
+    background-color: #404040;
+}
