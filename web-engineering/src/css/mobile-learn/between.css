@@ -1,0 +1,187 @@
+html {
+    font-size:100px;
+}
+a,img,button,input,textarea,div,span{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight:rgba(0,0,0,0);
+    -webkit-text-size-adjust:none;
+    -webkit-outline:none;
+}
+body {
+    margin:0;
+    padding:0;
+    width:100%;
+    background-color:#fff;
+    position:absolute;
+    overflow-x:hidden;
+    font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+}
+/*刷新按钮*/
+.tools{
+    font-size: 26px;
+    float:right;
+    overflow: hidden;
+    text-align: center;
+    line-height: 50px;
+    width:100px;
+    height:50px;
+    background:#c03131;
+    border-radius: 5px;
+    color:#fff;
+    font-weight: bold;
+    margin:10px;
+}
+.flex_wrapper{
+    /*设置flex布局*/
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;     
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    width:100%;
+}
+h1{
+    clear:both;
+    overflow: hidden;
+    font-size: 24px;
+    font-weight: bold;
+    margin:5px 10px;
+}
+
+/*flex等分布局*/
+.a1,.a2,.a3{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;   
+}
+.a1{
+    background: #ccc;
+}
+.a2{
+    background:#00ffff;
+}
+.a3{
+    background:#00aafd;
+}
+
+/*table等分布局*/
+.table_wrapper{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+}
+.b1,.b2,.b3,.b4{
+    display: table-cell;
+}
+.b1{
+    background:#ff0;
+}
+.b2{
+    background:#f00;
+}
+.b3{
+    background:#c03131;
+}
+.b4{
+    background:#cc3;
+}
+
+/*flex居中*/
+.flex_outer{
+    /*设置flex布局*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    /*兼容android*/
+    /*通过一起使用 box-align 和 box-pack 属性，对 div 框的子元素进行垂直和水平居中*/
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+
+    /*兼容ios*/
+    /*使得div框的子元素位于容器的水平中心*/
+    -webkit-justify-content: center;
+    justify-content: center;
+    /*使得div框的子元素位于容器的垂直中心*/
+    -webkit-align-items: center;
+    align-items: center;
+
+    border: 1px solid #ccc;
+    margin: 0 20px;
+    height: 200px;
+}
+.flex_in{
+    background: #0078e7;
+    color: #fff;
+    width: 150px;
+    line-height: 50px;
+    text-align: center;
+}
+
+/*translate居中*/
+.translate_outer{
+    position: relative;
+    border: 1px solid #ccc;
+    margin: 0 20px;
+    height: 200px;
+}
+.translate_in{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #0078e7;
+    color: #fff;
+    width: 150px;
+    line-height: 50px;
+    text-align: center;
+}
+
+/*两端对齐*/
+.justify{
+
+    /*设置flex布局*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    /*兼容android*/
+    /*通过使用 box-pack 属性，使子元素两端对齐*/
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+
+    /*兼容ios*/
+    /*使得div框的子元素位于容器的两端对齐*/
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+
+    padding: 0 10px;
+    background: #0078e7;
+    color: #fff;
+    line-height: 32px;
+
+}
+
+.c1,.c2{
+   display: block;
+}
+
+
+
+
+
+
+
+
+
+

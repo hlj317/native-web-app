@@ -14,8 +14,8 @@ var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;   //公共模块
 
 var srcDir = path.resolve(process.cwd(), 'src');
 var assets = 'assets/';
-var sourceMap = require('./src/sourcemap.json');    //映射文件
-var Dirs = ["vod","view-learn"];   //需要打包的目录
+var sourceMap = require('./src/sourcemap.json');  //映射文件
+var Dirs = ["vod","view-learn","mobile-learn"];   //需要打包的目录
 
 var excludeFromStats = [
     /node_modules[\\\/]/

@@ -33,15 +33,18 @@ body {
     margin:10px;
 }
 .demo{
-    clear:both;
-    overflow: hidden;
+
+    /*设置内嵌的元素在 3D 空间如何呈现：保留 3D*/
+    -webkit-transform-style: preserve-3d;
+    /*（设置进行转换的元素的背面在面对用户时是否可见：隐藏）*/
+    -webkit-backface-visibility: hidden;
 
     /*开启3D动画,设置位移距离*/
-    -webkit-transform: translate3d(230px,30px,-200px);
-    -moz-transform: translate3d(230px,30px,-200px);
-    -ms-transform: translate3d(230px,30px,-200px);
-    -o-transform: translate3d(230px,30px,-200px);
-    transform: translate3d(230px,30px,-200px);
+    -webkit-transform: translate3d(210px,150px,-200px);
+    -moz-transform: translate3d(210px,150px,-200px);
+    -ms-transform: translate3d(210px,150px,-200px);
+    -o-transform: translate3d(210px,150px,-200px);
+    transform: translate3d(210px,150px,-200px);
 
     /*设置动画效果*/
     -webkit-transition: -webkit-transform 2.3s ease-in-out;
@@ -50,6 +53,7 @@ body {
     width:100px;
     height:100px;
     background: #f00;
+
 }
 
 .left-in, .left-out {
