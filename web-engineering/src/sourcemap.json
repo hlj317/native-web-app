@@ -55,6 +55,8 @@
 
     "iscroll4" : "js/utils/iscroll4",
 
-    "iscroll5" : "js/utils/iscroll5"
+    "iscroll5" : "js/utils/iscroll5",
+
+    "lazysizes" : "js/libs/lazysizes"
 
 }

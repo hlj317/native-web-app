@@ -1,0 +1,47 @@
+html {
+    font-size:100px;
+}
+a,img,button,input,textarea,div,span{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight:rgba(0,0,0,0);
+    -webkit-text-size-adjust:none;
+    -webkit-outline:none;
+}
+body {
+    margin:0;
+    padding:0;
+    width:100%;
+    background-color:#fff;
+    position:absolute;
+    overflow-x:hidden;
+    font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+}
+
+.list{
+    /*设置flex布局*/
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width:100%;
+}
+.list span{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    display: block;
+}
+.list span:nth-child(odd){
+    margin:5px 5px 0 5px;
+}
+.list span:nth-child(even){
+    margin:5px 5px 0 0;
+}
+.list span img{
+    width:100%;
+}
+
+
+
+
+
