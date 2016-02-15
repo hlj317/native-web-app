@@ -8,8 +8,8 @@ var notify = require('gulp-notify');     //更改提醒
 var imagemin = require('gulp-imagemin'); //图片压缩
 var cache = require('gulp-cache');       //图片缓存，只有图片替换了才压缩
 
-var webpackConf = require('./webpack.config');
-var webpackDevConf = require('./webpack-dev.config');
+var webpackConf = require('./webpack.config')({debug: false});   //生产环境;
+var webpackDevConf = require('./webpack.config')({debug: true});  //开发环境;
 
 //返回当前进程的工作目录
 var src = process.cwd() + '/src';
