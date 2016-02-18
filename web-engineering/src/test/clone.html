@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>克隆对象</title>
+    <style>
+    .a1{
+        width:200px;
+        float:left;
+    }
+    .a1:after{
+        content:"";
+        height:0;
+        visibility:hidden;
+        display:block;
+        clear:both;
+    }
+    .a2{
+        display:block;
+        float: left;
+        width:200px;
+    }
+    </style>
+</head>
+
+<body>
+<div class="a1">今天天气不错</div>
+<div class="a2">今天还可以吧</div>
+<div class="proImgs">2132132</div>
+<script data-debug src="/__build/ys-common.js"></script>
+<script data-debug src="/__build/clone.js"></script>
+
+</body>
+</html>

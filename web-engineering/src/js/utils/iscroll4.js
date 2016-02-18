@@ -91,11 +91,11 @@ var m = Math,
 
 		// Default options
 		that.options = {
-			hScroll: true,
-			vScroll: true,
-			x: 0,
-			y: 0,
-			bounce: true,
+			hScroll: true,   //是否水平滚动
+			vScroll: true,   //是否垂直滚动
+			x: 0,   //滚动水平初始位置
+			y: 0,   //滚动垂直初始位置
+			bounce: true,  //是否超过实际位置反弹
 			bounceLock: false,
 			momentum: true,
 			lockDirection: true,

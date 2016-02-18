@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>萤石直播</title>
+    <style>*{}</style>
+</head>
+
+<body>
+<div id="test" style="width:1px;height:17px;background:#0f0;">0%</div>
+<input type="button" value="Run" id="run"/>
+
+<script data-debug src="/__build/ys-common.js"></script>
+
+<script>
+    window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
+    function (callback) { window.setTimeout(callback, 1000 / 60); };
+
+    var start = null;
+    var ele = document.getElementById("test");
+    var progress = 0;
+
+    function step(timestamp) {
+        progress += 1;
+        ele.style.width = progress + "%";
+        ele.innerHTML=progress + "%";
+        if (progress < 100) {
+            requestAnimationFrame(step);
+        }
+    }
+    requestAnimationFrame(step);
+    document.getElementById("run").addEventListener("click", function() {
+        ele.style.width = "1px";
+        progress = 0;
+        requestAnimationFrame(step);
+    }, false);
+</script>
+
+</body>
+</html>

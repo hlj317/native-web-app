@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>萤石直播</title>
+    <style>*{}</style>
+</head>
+
+<body>
+<div id="el" style="position: absolute;">Javascript时钟实现动画</div>
+
+<div id="el2" style="position: absolute;top:30px;">Javascript时钟实现动画</div>
+
+<script data-debug src="/__build/ys-common.js"></script>
+
+<script>
+    var rAF = window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            window.oRequestAnimationFrame ||
+            window.msRequestAnimationFrame ||
+            function (callback) { window.setTimeout(callback, 1000 / 60); };
+    var pos = 0;
+    var final = 180;
+    var dir = 0;
+    var el = $('#el');
+    function upLeft() {
+        var transformNum = /translate\((\d+)px\)/.exec(el.css('-webkit-transform'));
+        var translate = parseInt(transformNum ? transformNum[1] : 0);
+        if (translate >= final) dir = 1;
+        if (translate <= pos) dir = 0;
+
+        if (dir == 0) {
+            translate++;
+            el.css('-webkit-transform', 'translate(' + translate + 'px)');
+            rAF(upLeft);
+        } else {
+            translate--;
+            el.css('-webkit-transform', 'translate(' +translate + 'px)');
+            rAF(upLeft);
+        }
+    }
+    upLeft();
+
+
+    var rAF2 = function (callback) { window.setTimeout(callback, 1000 / 60); };
+
+    var el2 = $('#el2');
+
+    function upLeft2() {
+        var pos = 0;
+        var final = 180;
+        var dir = 0;
+        var transformNum = /translate\((\d+)px\)/.exec(el2.css('-webkit-transform'));
+        var translate = parseInt(transformNum ? transformNum[1] : 0);
+        if (translate >= final) dir = 1;
+        if (translate < pos) dir = 0;
+
+        if (dir == 0) {
+            translate++;
+            el2.css('-webkit-transform', 'translate(' + translate + 'px)');
+            rAF2(upLeft2);
+        } else {
+            translate--;
+            el2.css('-webkit-transform', 'translate(' +translate + 'px)');
+            rAF2(upLeft2);
+        }
+    }
+    upLeft2();
+</script>
+
+</body>
+</html>

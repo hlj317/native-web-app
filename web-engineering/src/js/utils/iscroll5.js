@@ -1,5 +1,9 @@
 /*! iScroll v5.1.3 ~ (c) 2008-2014 Matteo Spinelli ~ http://cubiq.org/license */
 (function (window, document, Math) {
+
+    /**
+     * 对帧事件做兼容性处理
+     */
 var rAF = window.requestAnimationFrame	||
 	window.webkitRequestAnimationFrame	||
 	window.mozRequestAnimationFrame		||
@@ -7,10 +11,24 @@ var rAF = window.requestAnimationFrame	||
 	window.msRequestAnimationFrame		||
 	function (callback) { window.setTimeout(callback, 1000 / 60); };
 
+    /**
+     * 工具类处理函数
+     */
 var utils = (function () {
+
+    //将需要暴露给外界调用的方法放在me对象里，其他var声明的方法则保持为私有
 	var me = {};
 
+    /**
+     * 用于判断浏览器是否支持相关的CSS3属性
+     * @type {CSSStyleDeclaration}
+     * @private
+     */
 	var _elementStyle = document.createElement('div').style;
+
+    /**
+     * 判断CSS 属性样式前缀
+     */
 	var _vendor = (function () {
 		var vendors = ['t', 'webkitT', 'MozT', 'msT', 'OT'],
 			transform,
@@ -25,12 +43,22 @@ var utils = (function () {
 		return false;
 	})();
 
+    /**
+     * 获取CSS 前缀
+     * @param style
+     * @returns {*} 返回CSS3兼容性前缀
+     * @private
+     */
 	function _prefixStyle (style) {
 		if ( _vendor === false ) return false;
 		if ( _vendor === '' ) return style;
 		return _vendor + style.charAt(0).toUpperCase() + style.substr(1);
 	}
 
+    /**
+     * 获取时间戳
+     * @type {Function}
+     */
 	me.getTime = Date.now || function getTime () { return new Date().getTime(); };
 
 	me.extend = function (target, obj) {
@@ -53,6 +81,16 @@ var utils = (function () {
 			pointerEvent;
 	};
 
+    /**
+     * 根据我们的拖动返回运动的长度与耗时，用于惯性拖动判断
+     * @param current 当前鼠标位置
+     * @param start touchStart时候记录的Y（可能是X）的开始位置，但是在touchmove时候可能被重写
+     * @param time touchstart到手指离开时候经历的时间，同样可能被touchmove重写
+     * @param lowerMargin y可移动的最大距离，这个一般为计算得出 this.wrapperHeight - this.scrollerHeight
+     * @param wrapperSize 如果有边界距离的话就是可拖动，不然碰到0的时候便停止
+     * @param deceleration 匀减速
+     * @returns {{destination: number, duration: number}}
+     */
 	me.momentum = function (current, start, time, lowerMargin, wrapperSize, deceleration) {
 		var distance = current - start,
 			speed = Math.abs(distance) / time,
@@ -170,6 +208,11 @@ var utils = (function () {
 		MSPointerUp: 3
 	});
 
+    /**
+     * 动画函数
+     * style为css3调用的
+     * fn为js调用的
+     */
 	me.extend(me.ease = {}, {
 		quadratic: {
 			style: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',
@@ -218,6 +261,11 @@ var utils = (function () {
 		}
 	});
 
+    /**
+     * 模拟tap事件
+     * @param e
+     * @param eventName
+     */
 	me.tap = function (e, eventName) {
 		var ev = document.createEvent('Event');
 		ev.initEvent(eventName, true, true);
@@ -226,6 +274,10 @@ var utils = (function () {
 		e.target.dispatchEvent(ev);
 	};
 
+    /**
+     * 模拟点击事件
+     * @param e
+     */
 	me.click = function (e) {
 		var target = e.target,
 			ev;
@@ -246,31 +298,40 @@ var utils = (function () {
 })();
 
 function IScroll (el, options) {
+    //wrapper 是iScroll的容器
 	this.wrapper = typeof el == 'string' ? document.querySelector(el) : el;
+    //scroller 是iScroll 滚动的元素
 	this.scroller = this.wrapper.children[0];
-	this.scrollerStyle = this.scroller.style;		// cache style for better performance
-
+    // scroller 的 Style对象，通过set他的属性改变样式
+	this.scrollerStyle = this.scroller.style;
+    //初始化参数
 	this.options = {
 
 		resizeScrollbars: true,
 
 		mouseWheelSpeed: 20,
-
+        //前进的步长距离
 		snapThreshold: 0.334,
 
 // INSERT POINT: OPTIONS 
 
 		startX: 0,
+        //默认是Y轴上下滚动
 		startY: 0,
 		scrollY: true,
+        //方向锁定阈值，比如用户点击屏幕后，滑动5px的距离后，判断用户的拖动意图，是x方向拖动还是y方向
 		directionLockThreshold: 5,
+        //是否有惯性缓冲动画
 		momentum: true,
-
+        //超出边界时候是否还能拖动
 		bounce: true,
+        //超出边界还原时间点
 		bounceTime: 600,
+        //超出边界返回的动画
 		bounceEasing: '',
-
+        //是否阻止默认滚动事件
 		preventDefault: true,
+        //当遇到表单元素则不阻止冒泡，而是弹出系统自带相应的输入控件
 		preventDefaultException: { tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT)$/ },
 
 		HWCompositing: true,
@@ -283,8 +344,16 @@ function IScroll (el, options) {
 	}
 
 	// Normalize options
+    /**
+     * 判断是否支持3D加速
+     * @type {string}
+     */
 	this.translateZ = this.options.HWCompositing && utils.hasPerspective ? ' translateZ(0)' : '';
 
+    /**
+     * 判断是否支持css3的transition 动画
+     * @type {*|utils.hasTransition|boolean}
+     */
 	this.options.useTransition = utils.hasTransition && this.options.useTransition;
 	this.options.useTransform = utils.hasTransform && this.options.useTransform;
 
@@ -315,7 +384,8 @@ function IScroll (el, options) {
 
 // INSERT POINT: NORMALIZATION
 
-	// Some defaults	
+    // Some defaults
+    //一些默认 不会被重写的参数属性
 	this.x = 0;
 	this.y = 0;
 	this.directionX = 0;
@@ -324,6 +394,9 @@ function IScroll (el, options) {
 
 // INSERT POINT: DEFAULTS
 
+    /**
+     * 初始化
+     */
 	this._init();
 	this.refresh();
 
@@ -375,18 +448,30 @@ IScroll.prototype = {
 		}
 	},
 
+    /**
+     * touchstart 触发该函数
+     * @param e
+     * @private
+     */
 	_start: function (e) {
-		// React to left mouse button only
+
+        //判断是否是鼠标左键按下的拖动
 		if ( utils.eventType[e.type] != 1 ) {
 			if ( e.button !== 0 ) {
 				return;
 			}
 		}
 
+        /**
+         * 判断是否开启拖动，是否初始化完毕 否则就返回
+         */
 		if ( !this.enabled || (this.initiated && utils.eventType[e.type] !== this.initiated) ) {
 			return;
 		}
 
+        /**
+         * 如果参数里设置了preventDefault 则 阻止默认事件
+         */
 		if ( this.options.preventDefault && !utils.isBadAndroid && !utils.preventDefaultException(e.target, this.options.preventDefaultException) ) {
 			e.preventDefault();
 		}
@@ -401,21 +486,24 @@ IScroll.prototype = {
 		this.directionX = 0;
 		this.directionY = 0;
 		this.directionLocked = 0;
-
+        //开启动画时间，如果之前有动画的话，便要停止动画，这里因为没有传时间，所以动画便直接停止了
+        //用于停止拖动产生的惯性动作（touchstart时页面可能正在滚动）
 		this._transitionTime();
-
+        //记录下 touch start 的事件
 		this.startTime = utils.getTime();
-
+        //如果正在动画状态，则让页面停止在手指触摸处
 		if ( this.options.useTransition && this.isInTransition ) {
 			this.isInTransition = false;
+            //获取x,y坐标值
 			pos = this.getComputedPosition();
+            //touchstart时,让正在滚动的页面停止下来
 			this._translate(Math.round(pos.x), Math.round(pos.y));
 			this._execEvent('scrollEnd');
 		} else if ( !this.options.useTransition && this.isAnimating ) {
 			this.isAnimating = false;
 			this._execEvent('scrollEnd');
 		}
-
+        //重设一些参数
 		this.startX    = this.x;
 		this.startY    = this.y;
 		this.absStartX = this.x;
@@ -426,6 +514,11 @@ IScroll.prototype = {
 		this._execEvent('beforeScrollStart');
 	},
 
+    /**
+     * touchmove时调用的函数.
+     * @param e
+     * @private
+     */
 	_move: function (e) {
 		if ( !this.enabled || utils.eventType[e.type] !== this.initiated ) {
 			return;
@@ -1665,7 +1758,13 @@ function Indicator (scroller, options) {
 	}
 }
 
+
 Indicator.prototype = {
+
+    /**
+     * 统一的事件处理对象
+     * @param e
+     */
 	handleEvent: function (e) {
 		switch ( e.type ) {
 			case 'touchstart':
@@ -2000,8 +2099,14 @@ Indicator.prototype = {
 	}
 };
 
+/**
+ * 将utils工具类函数归到iscroll下面 方便开发者调用
+ */
 IScroll.utils = utils;
 
+/**
+ * 一些CMD AMD的实现 如require.js sea.js 等
+ */
 if ( typeof module != 'undefined' && module.exports ) {
 	module.exports = IScroll;
 } else {

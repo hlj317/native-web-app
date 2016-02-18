@@ -21,7 +21,10 @@ app.use( statics( path.join( __dirname, './src')))
     .use(session(app))
     .use( function *( next ){
     // ignore favicon
-    if (this.path === '/favicon.ico') return;
+    if (this.path === '/favicon.ico') {
+        this.body = "ignore";
+        //return;
+    };
     this.body = this.request.body;
     yield next;
 });
