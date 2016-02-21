@@ -55,9 +55,9 @@ var Toast = (function(){
                 _end = this.config.time / 4;
             $(".comp_toast").fadeIn(_start,function(){
                 setTimeout(function(){
-                    $(".comp_toast").fadeOut(_end,function(){
-                        me.isShow = false;
-                    });
+                    // $(".comp_toast").fadeOut(_end,function(){
+                    //     me.isShow = false;
+                    // });
                 },_duration);
             });
         };
@@ -75,14 +75,7 @@ var Toast = (function(){
                 _width,
                 _title;
             _title = Tools.subString(title,25);
-            me.$toast.html(_title).css({"left":0});
-            setTimeout(function(){
-                _width = me.$toast.width();
-                me.$toast.css({
-                    "marginLeft" : -(_width / 2) + "px",
-                    "left" : "50%"
-                })
-            },1);
+            me.$toast.html(_title);
 
         }
 

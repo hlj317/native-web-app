@@ -10,9 +10,10 @@
 }
 .comp_modal{
     position: fixed;
-    top: 25%;
+    top: 50%;
     left : 50%;
-    margin-left: -1.40rem;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
     width: 2.80rem;
     z-index: 2;
     background: #fff;

@@ -1,16 +1,18 @@
 .comp_toast{
     position: fixed;
     top: 50%;
-    left : 0;
-    margin-top: -0.17rem;
+    left : 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
     z-index: 3;
     background: #555;
-    text-align: center;
-    border-radius: 25px;
+    text-align: left;
+    border-radius: 10px;
     color:#fff;
-    padding:0 20px;
-    height : 0.34rem;
-    line-height: 0.34rem;
+    padding:0.10rem 0.20rem;
+    line-height: 0.24rem;
     font-size: 16px;
+    word-wrap: break-word;  
+    word-break: normal;  
     display: none;
 }
