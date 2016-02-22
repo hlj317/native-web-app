@@ -1,5 +1,5 @@
 var toast = require('toast');
-toast.show("今天天气不错，要继续加油！",3000000);
+toast.show("机会不错",3000);
 
 window.toast = toast;
 

@@ -55,9 +55,9 @@ var Toast = (function(){
                 _end = this.config.time / 4;
             $(".comp_toast").fadeIn(_start,function(){
                 setTimeout(function(){
-                    // $(".comp_toast").fadeOut(_end,function(){
-                    //     me.isShow = false;
-                    // });
+                    $(".comp_toast").fadeOut(_end,function(){
+                         me.isShow = false;
+                    });
                 },_duration);
             });
         };
