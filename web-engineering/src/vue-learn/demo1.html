@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <!--是否启动webapp功能，会删除默认的苹果工具栏和菜单栏-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--当启动webapp功能时，显示手机信号、时间、电池的顶部导航栏的颜色。默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明）。-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!--忽略页面中的数字识别为电话号码和邮箱地址-->
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <title>demo1</title>
+</head>
+<body>
+<!--Hello world -->
+<div id="app" class="myapp">
+    {{ message }}
+</div>
+
+<!--双向绑定 -->
+<div id="app2" class="myapp">
+    <p>{{ message }}</p>
+    <input v-model="message">
+</div>
+
+<!--渲染列表 -->
+<div id="app3" class="myapp">
+    <ul>
+        <li v-for="todo in todos">
+            {{ todo.text }}
+        </li>
+    </ul>
+</div>
+
+<!--处理用户输入 -->
+<div id="app4" class="myapp">
+    <p>{{ message }}</p>
+    <button v-on:click="reverseMessage">Reverse Message</button>
+</div>
+
+<!--综合 -->
+<div id="app5" class="myapp">
+    <input v-model="newTodo" v-on:keyup.enter="addTodo">
+    <ul>
+        <li v-for="todo in todos">
+            <span>{{ todo.text }}</span>
+            <button v-on:click="removeTodo($index)">X</button>
+        </li>
+    </ul>
+</div>
+
+<script data-debug src="/__build/ys-common.js"></script>
+<script data-debug src="/__build/demo1.js"></script>
+
+</body>
+</html>
