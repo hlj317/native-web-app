@@ -3,6 +3,8 @@
 
     "underscore": "js/libs/underscore",
 
+    "require": "js/libs/require",
+
     "commonCss": "css/public/public",
 
     "normalizeCss": "css/libs/normalize",

@@ -1,19 +1,20 @@
-var b = window.b = {};//base
+var Base = window.Base = {};//base
 var slice = [].slice;
 
-b.Class = function (supClass, childAttr) {
+Base.extend = function (supClass, childAttr) {
+
     //若是传了第一个类，便继承之；否则实现新类
     if (typeof supClass === 'object') {
         childAttr = supClass;
-        supClass = function () {
-        };
+        supClass = function(){};
     }
 
     //定义我们创建的类
-    var newClass = function () {
+    var newClass = function(){
         this._propertys_();
         this.init.apply(this, arguments);
     };
+
     newClass.prototype = new supClass();
 
     var supInit = newClass.prototype.init || function () {
@@ -55,37 +56,8 @@ b.Class = function (supClass, childAttr) {
     return newClass;
 };
 
-var Bird = new b.Class({
-    //作为自身属性将被调用，里面必须采用this.XX的方式书写
-    _propertys_: function () {
-        this.name = '鸟类';
-        this.age = 0;
-    },
-    //一定会被执行的初始化方法
-    init: function () {
-        alert('一定会执行');
-    },
-    //原型方法
-    breathe: function () {
-        alert('我能呼吸');
-    }
-});
-
-var Chicken = new b.Class(Bird, {
-    _propertys_: function () {
-        this.sex = '公鸡';
-    },
-    //一定会被执行的初始化方法
-    init: function () {
-        alert('我是一只鸡');
-    },
-    //原型方法
-    howl: function () {
-        alert('我能打鸣');
-    }
-});
-
-b.AbstractView = b.Class({
+//视图类
+Base.AbstractView = Base.extend({
     //基本view应该具有的属性
     _propertys_: function () {
         this.id = (new Date()).getTime(); //唯一pageID
@@ -95,7 +67,7 @@ b.AbstractView = b.Class({
         this.footer = null;
         this.template = '';//可能的模板
         this.isCreated = false;//是否创建完毕
-        this.status = b.AbstractView.STATE_NOTCREATE;//当前状态
+        this.status = Base.AbstractView.STATE_NOTCREATE;//当前状态
     },
     init: function () {
     },
@@ -112,7 +84,7 @@ b.AbstractView = b.Class({
     },
     //创建dom
     create: function (opts) {
-        if(!this.isCreated && this.status != b.AbstractView.STATE_ONCREATE) {
+        if(!this.isCreated && this.status != Base.AbstractView.STATE_ONCREATE) {
             var attr = opts && opts.attr;
             var html = this.createHtml();
             this.initRoot(attr);//初始化root
@@ -120,31 +92,31 @@ b.AbstractView = b.Class({
             this.rootBox.append(this.root);
             this.root.html(html);
             this.trigger('onCreate');//触发正在创建事件，其实这里都创建完了
-            this.status = b.AbstractView.STATE_ONCREATE;
+            this.status = Base.AbstractView.STATE_ONCREATE;
             this.isCreated = true;
             this.bindEvent();
         }
     },
     //呈现/渲染视图
     show: function (callback) {
-        if(this.status == b.AbstractView.STATE_ONSHOW) {
+        if(this.status == Base.AbstractView.STATE_ONSHOW) {
             return;
         }
         this.create();
         this.root.show();
         this.trigger('onShow');
-        this.status = b.AbstractView.STATE_ONSHOW
+        this.status = Base.AbstractView.STATE_ONSHOW
         callback && (typeof callback == 'function') && callback.call(this);
         this.trigger('onLoad');
     },
     //隐藏dom
     hide: function (callback) {
-        if(!this.root || this.status == b.AbstractView.STATE_ONHIDE) {
+        if(!this.root || this.status == Base.AbstractView.STATE_ONHIDE) {
             return;
         }
         this.root.hide();
         this.trigger('onHide');
-        this.status = b.AbstractView.STATE_ONHIDE;
+        this.status = Base.AbstractView.STATE_ONHIDE;
         callback && (typeof callback == 'function') && callback();
     },
     //事件绑定
@@ -224,10 +196,124 @@ b.AbstractView = b.Class({
 });
 
 //组件状态,未创建
-b.AbstractView.STATE_NOTCREATE = 'notCreate';
+Base.AbstractView.STATE_NOTCREATE = 'notCreate';
 //组件状态,已创建但未显示
-b.AbstractView.STATE_ONCREATE = 'onCreate';
+Base.AbstractView.STATE_ONCREATE = 'onCreate';
 //组件状态,已显示
-b.AbstractView.STATE_ONSHOW = 'onShow';
+Base.AbstractView.STATE_ONSHOW = 'onShow';
 //组件状态,已隐藏
-b.AbstractView.STATE_ONHIDE = 'onHide';
+Base.AbstractView.STATE_ONHIDE = 'onHide';
+
+
+//Hash类
+Base.Hash = Base.extend({
+
+    //内置私有属性
+    _propertys_ : function(){
+        this.keys = [];
+        this.values = [];
+    },
+
+    //初始化
+    init : function(obj){
+        //如果obj不是object，那赋一个空对象
+        (typeof obj == 'object') || (obj={});
+        for(var k in obj){
+            if(obj.hasOwnProperty(k)){
+                this.keys.push(k);
+                this.values.push(obj[k]);
+            }
+        }
+    },
+
+    length : function(){
+        return this.keys.length;
+    },
+
+    getItem : function(k){
+        var index = [].indexOf.call(this.keys,k);
+        if(index < 0){
+            return null;
+        }
+        return this.keys[index];
+    },
+
+    getKey : function(i){
+        return this.keys[i];
+    },
+
+    getValue : function(i){
+        return this.keys[i];
+    },
+
+    add : function(k,v){
+        return this.push(k,v);
+    },
+
+    del : function(k){
+        var index = [].indexOf.call(this.keys,k);
+        return this.delByIndex(index);
+    },
+
+    delByIndex : function(index){
+        if(index < 0) return this;
+        this.keys.splice(index,1);
+        this.values.splice(index,1);
+        return this;
+    },
+
+    //移除栈顶hash，并返回
+    pop : function(){
+        if (!this.keys.length) return null;
+        this.keys.pop();
+        return this.values.pop();
+    },
+
+    push : function(k,v,order){
+
+        if(typeof k == 'object' && !v){
+            for(var i in k){
+                if(k.hasOwnProperty(i)){
+                    this.push(i,k[i],order);
+                }
+            }
+        }else{
+            var index = [].indexOf.call(this.keys,k);
+            if(index < 0 || order){
+                if(order) this.del(k);
+                this.keys.push(k);
+                this.values.push(v);
+            }else{
+                this.values[index] = v;
+            }
+        }
+
+    },
+
+    //查找hash表，返回key
+    indexOf : function(v){
+        var index = [].indexOf.call(this.values,v);
+        if(index >= 0){
+            return this.keys[index];
+        }
+        return -1;
+    },
+
+    each : function(handler){
+        if(typeof handler == 'function'){
+            for(var i = 0,len = this.length();i<len;i++){
+                handler.call(this,this.keys[i],this.calues[i]);
+            }
+        }
+    },
+
+    getObj : function(){
+        var obj = {};
+        for(var i = 0,len = this.length();i<len;i++){
+            obj[this.keys[i]] == this.values[i];
+        }
+        return obj;
+    }
+
+
+})
