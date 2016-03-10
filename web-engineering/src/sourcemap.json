@@ -1,15 +1,21 @@
 {
-    "zepto": "js/libs/zepto_1.1.6",
+    "zepto": "js/libs/zepto-stable",
 
     "underscore": "js/libs/underscore",
 
+    "underscore-extend": "js/libs/underscore-extend",
+
     "require": "js/libs/require",
+
+    "require-text": "js/libs/require-text",
 
     "commonCss": "css/public/public",
 
     "normalizeCss": "css/libs/normalize",
 
     "resetCss": "css/libs/reset",
+
+    "globalCss" : "css/public/global",
 
     "animateCss": "css/libs/animate",
 
@@ -59,6 +65,65 @@
 
     "iscroll5" : "js/utils/iscroll5",
 
-    "lazysizes" : "js/libs/lazysizes"
+    "lazysizes" : "js/libs/lazysizes",
+
+    "AbstractApp": "js/mvc/abstract.app",
+  
+    "AbstractView": "js/mvc/abstract.view",
+  
+    "ModuleView": "js/mvc/module.view",
+
+    "AbstractModel": "js/data/abstract.model",
+
+    "AbstractEntity": "js/mvc/abstract.entity",
+
+    "AbstractStore": "js/data/abstract.store",
+
+    "AbstractStorage": "js/data/abstract.storage",
+
+    "UIAbstractView": "js/ui/ui.abstract.view",
+
+    "UIMask": "js/ui/ui.mask",
+
+    "UILayer": "js/ui/ui.layer",
+
+    "UIPageView": "js/ui/ui.page.view",
+
+    "UIScroll": "js/ui/ui.scroll",
+
+    "UISlider": "js/ui/ui.slider",
+
+    "UIImageSlider": "js/ui/ui.image.slider",
+    "T_UISlider": "ui/ui.slider.ejs",
+
+    "UIScrollLayer": "js/ui/ui.scroll.layer",
+    "T_UIScrollLayer": "ui/ui.scroll.layer.ejs",
+
+    "UIAlert": "js/ui/ui.alert",
+    "T_UIAlert": "ui/ui.alert.ejs",
+
+    "UICalendar": "js/ui/ui.calendar",
+    "T_UICalendar": "ui/ui.calendar.ejs",
+
+    "UICalendarBox": "js/ui/ui.calendar.box",
+    "T_UICalendarBox": "ui/ui.calendar.box.ejs",
+
+    "APPUIHeader": "js/ui/app.ui.header",
+    "T_APPUIHeader": "ui/app.ui.header.ejs",
+
+    "UIHeader": "js/ui/ui.header",
+    "T_UIHeader": "ui/ui.header.ejs",
+
+    "NuomiHeader": "js/ui/ui.nuomi.header",
+
+    "UIToast": "js/ui/ui.toast",
+    "T_UIToast": "ui/ui.toast.ejs",
+
+    "UILoading": "js/ui/ui.loading",
+    "T_UILoading": "ui/ui.loading.ejs",
+
+    "UILayerList": "js/ui/ui.layer.list",
+    "T_UILayerList": "ui/ui.layer.list.ejs",
+    "T_UICalendarBox": "ui/ui.calendar.box.ejs"
 
 }

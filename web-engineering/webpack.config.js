@@ -15,7 +15,7 @@ var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;   //公共模块
 var srcDir = path.resolve(process.cwd(), 'src');
 var assets = 'assets/';
 var sourceMap = require('./src/sourcemap.json');  //映射文件
-var Dirs = ["vod","view-learn","mobile-learn","test","vue-learn"];   //需要打包的目录
+var Dirs = ["vod","view-learn","mobile-learn","test","vue-learn","webapp"];   //需要打包的目录
 
 var excludeFromStats = [
     /node_modules[\\\/]/
@@ -74,7 +74,8 @@ function makeConf(options) {
             }, {
                 test: /\.(tpl|html)$/,
                 loader: 'html'
-            }, {
+            },
+            {
                 test: /\.(ejs)$/,
                 loader: 'ejs'
             }, {
@@ -210,8 +211,11 @@ function genEntries() {
 
     var map = {};
     var dirIndex = 0;
-    //公共类库
-    map["ys-common"] = ['commonJs', 'zepto', 'baidu', 'underscore', 'resetCss', 'commonCss'];
+    //萤石公共类库
+    map["ys-common"] = ['commonJs', 'zepto', 'baidu', 'underscore','resetCss','commonCss'];
+
+    //一般底层类库
+    map["public"] = ['zepto','underscore','globalCss'];
 
     while(Dirs[dirIndex]) {
 
