@@ -1,5 +1,3 @@
-require('../../css/public/global');
-
 var project = './';
 var viewRoot = 'pages';
 

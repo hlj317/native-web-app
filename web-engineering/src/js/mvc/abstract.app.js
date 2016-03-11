@@ -4,8 +4,9 @@ define([
   'UILoading',
   'UIPageView',
   'UIAlert',
-  'underscore'
-], function (UIHeader, UIToast, UILoading, UIPageView, UIAlert,_) {
+  'underscore',
+  'fastclick'
+], function (UIHeader, UIToast, UILoading, UIPageView, UIAlert,_,FastClick) {
 
     return _.inherit({
         propertys: function () {
@@ -52,18 +53,18 @@ define([
         },
 
         initialize: function (options) {
-            this.propertys();
+            this.propertys();   //设置属性
             this.setOption(options);
             this.initViewPort();
             this.initAppMapping();
 
             //开启fastclick
-            $.bindFastClick && $.bindFastClick();
+            FastClick.attach(document.body);
 
         },
 
         setOption: function (options) {
-            _.extend(this, options);
+            _.extend(this, options);    //深度拷贝
         },
 
         //创建dom结构

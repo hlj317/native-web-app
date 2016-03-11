@@ -12,7 +12,7 @@ define(['UIAbstractView', 'T_UIHeader','underscore'], function (UIView, template
       this.view;
 
       this.left = [];
-      this.title = '百度bus';
+      this.title = '头部导航';
       this.right = [];
 
       this.lastParam = null;

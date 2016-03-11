@@ -124,7 +124,9 @@ define(['underscore'], function (_) {
       //      _.extend(this, options);
     },
 
+    //组件初始化，一定执行
     initialize: function (opts) {
+
       //这种默认属性
       this.propertys();
       //根据参数重置属性

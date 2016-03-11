@@ -21,6 +21,7 @@ define(['underscore'], function (_) {
             this.header = this.APP.header;
         },
 
+        //显示具体层级的视图
         showPageView: function (name, _viewdata, id) {
             this.APP.curViewIns = this;
             this.APP.showPageView(name, _viewdata, id)
@@ -60,6 +61,7 @@ define(['underscore'], function (_) {
             if (_.isObject(events)) _.extend(this.events, events);
         },
 
+        //订阅事件的回调函数
         on: function (type, fn, insert) {
             if (!this.eventArr[type]) this.eventArr[type] = [];
 
@@ -71,6 +73,7 @@ define(['underscore'], function (_) {
             }
         },
 
+        //取消事件的回调函数
         off: function (type, fn) {
             if (!this.eventArr[type]) return;
             if (fn) {
@@ -80,6 +83,7 @@ define(['underscore'], function (_) {
             }
         },
 
+        //定义类的自定义事件
         trigger: function (type) {
             var _slice = Array.prototype.slice;
             var args = _slice.call(arguments, 1);
@@ -94,6 +98,7 @@ define(['underscore'], function (_) {
             return results;
         },
 
+        //创建根节点
         createRoot: function (html) {
 
             //如果存在style节点，并且style节点不存在的时候需要处理
@@ -114,15 +119,18 @@ define(['underscore'], function (_) {
 
         },
 
+        //是否是默认事件
         _isAddEvent: function (key) {
             if (key == 'onCreate' || key == 'onPreShow' || key == 'onShow' || key == 'onRefresh' || key == 'onHide')
                 return true;
             return false;
         },
 
+        //根据参数重置当前属性
         setOption: function (options) {
-            //这里可以写成switch，开始没有想到有这么多分支
+
             for (var k in options) {
+
                 if (k == 'events') {
                     _.extend(this[k], options[k]);
                     continue;
@@ -136,26 +144,28 @@ define(['underscore'], function (_) {
                 }
                 this[k] = options[k];
             }
-            //      _.extend(this, options);
+
         },
 
+        //组件初始化
         initialize: function (opts) {
-            //这种默认属性
+            //设置默认属性
             this.propertys();
             //根据参数重置属性
             this.setOption(opts);
             //检测不合理属性，修正为正确数据
             this.resetPropery();
-
+            //为当前类添加事件
             this.addEvent();
             this.create();
 
             this.initElement();
 
-            window.sss = this;
+            //window.sss = this;
 
         },
 
+        //选择器
         $: function (selector) {
             return this.$el.find(selector);
         },
@@ -167,11 +177,11 @@ define(['underscore'], function (_) {
         addEvent: function () {
         },
 
+        //渲染模板，定义组件生命周期的相关事件
         create: function () {
-            this.trigger('onPreCreate');
+            this.trigger('onPreCreate');   //自定义事件：onPreCreate
             //如果没有传入模板，说明html结构已经存在
             this.createRoot(this.render());
-
             this.status = 'create';
             this.trigger('onCreate');
         },
@@ -179,12 +189,12 @@ define(['underscore'], function (_) {
         //实例化需要用到到dom元素
         initElement: function () { },
 
-
+        //渲染模板，创建html片段
         render: function (callback) {
             var data = this.getViewModel() || {};
             var html = this.template;
             if (!this.template) return '';
-            //引入预编译机制
+            //引入预编译机制，比如webpack
             if (_.isFunction(this.template)) {
                 html = this.template(data);
             } else {
@@ -194,22 +204,26 @@ define(['underscore'], function (_) {
             return html;
         },
 
+        /**
+         * @description 组件刷新方法，首次显示会将ui对象实际由内存插入包裹层
+         * @method refresh
+         * @param {Boolean} needRecreate 组件是否重新创建，生命周期状态为create
+         */
         refresh: function (needRecreate) {
             this.resetPropery();
             if (needRecreate) {
                 this.create();
             } else {
-                this.$el.html(this.render());
+                this.$el.html(this.render());   //render可以传入回调函数，渲染之后的业务逻辑
             }
-            this.initElement();
+            this.initElement();   //初始化DOM
             if (this.status != 'hide') this.show();
             this.trigger('onRefresh');
         },
 
         /**
         * @description 组件显示方法，首次显示会将ui对象实际由内存插入包裹层
-        * @method initialize
-        * @param {Object} opts
+        * @method show
         */
         show: function () {
             this.trigger('onPreShow');
@@ -229,8 +243,9 @@ define(['underscore'], function (_) {
             this.trigger('onShow');
         },
 
-        initHeader: function () { },
+        initHeader: function (){},
 
+        //组件隐藏方法
         hide: function () {
             if (!this.$el || this.status !== 'show') return;
 
@@ -242,6 +257,7 @@ define(['underscore'], function (_) {
             this.trigger('onHide');
         },
 
+        //组件销毁方法
         destroy: function () {
             this.status = 'destroy';
             this.unBindEvents();
@@ -250,6 +266,7 @@ define(['underscore'], function (_) {
             delete this;
         },
 
+        //初始化事件
         bindEvents: function () {
             var events = this.events;
 
@@ -286,10 +303,12 @@ define(['underscore'], function (_) {
             return this;
         },
 
+        //获取当前url中的key值
         getParam: function (key) {
             return _.getUrlParam(window.location.href, key)
         },
 
+        //渲染模板
         renderTpl: function (tpl, data) {
             if (!_.isFunction(tpl)) tpl = _.template(tpl);
             return tpl(data);
