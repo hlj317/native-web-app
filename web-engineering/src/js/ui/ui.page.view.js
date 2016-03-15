@@ -91,7 +91,7 @@ define(['UIAbstractView', 'UIMask','underscore'], function (UIAbstractView, UIMa
       if (this.hasRequest) return;
       if (!this.viewPath) return;
       this.hasRequest = true;
-
+      debugger;
       require([this.viewPath], function (BaseView) {
         var View = _.inherit(BaseView, scope._viewdata_), k;
         var opts = {

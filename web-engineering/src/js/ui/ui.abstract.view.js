@@ -2,6 +2,7 @@
 define(['underscore'], function (_) {
   'use strict';
 
+  //获取视图层级，层级的索引号在闭包中，生命周期被保存下来
   var getBiggerzIndex = (function () {
     var index = 2000;
     return function (level) {
@@ -58,6 +59,7 @@ define(['underscore'], function (_) {
       e.preventDefault();
     },
 
+    //订阅事件的回调函数
     on: function (type, fn, insert) {
       if (!this.eventArr[type]) this.eventArr[type] = [];
 
@@ -69,6 +71,7 @@ define(['underscore'], function (_) {
       }
     },
 
+    //取消事件的回调函数
     off: function (type, fn) {
       if (!this.eventArr[type]) return;
       if (fn) {
@@ -78,6 +81,7 @@ define(['underscore'], function (_) {
       }
     },
 
+    //定义类的自定义事件
     trigger: function (type) {
       var _slice = Array.prototype.slice;
       var args = _slice.call(arguments, 1);
@@ -92,18 +96,21 @@ define(['underscore'], function (_) {
       return results;
     },
 
+    //创建根节点
     createRoot: function (html) {
       //UI的根节点
       this.$el = $('<div class="view ' + this.classname + '" style="display: none; " id="' + this.id + '">' + html + '</div>');
       this.wrapper.append(this.$el);
     },
 
+    //是否是默认事件
     _isAddEvent: function (key) {
       if (key == 'onCreate' || key == 'onPreShow' || key == 'onShow' || key == 'onRefresh' || key == 'onHide')
         return true;
       return false;
     },
 
+    //根据参数重置当前属性
     setOption: function (options) {
       //这里可以写成switch，开始没有想到有这么多分支
       for (var k in options) {
@@ -153,6 +160,7 @@ define(['underscore'], function (_) {
     addEvent: function () {
     },
 
+    //渲染模板，定义组件生命周期的相关事件
     create: function () {
       this.trigger('onPreCreate');
       //如果没有传入模板，说明html结构已经存在
@@ -171,6 +179,7 @@ define(['underscore'], function (_) {
     //实例化需要用到到dom元素
     initElement: function () { },
 
+    //渲染模板，创建html片段
     render: function (callback) {
       var data = this.getViewModel() || {};
       var html = this.template;
@@ -185,6 +194,11 @@ define(['underscore'], function (_) {
       return html;
     },
 
+  /**
+   * @description 组件刷新方法，首次显示会将ui对象实际由内存插入包裹层
+   * @method refresh
+   * @param {Boolean} needRecreate 组件是否重新创建，生命周期状态为create
+   */
     refresh: function (needRecreate) {
       this.resetPropery();
       if (needRecreate) {

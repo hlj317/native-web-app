@@ -43,7 +43,7 @@ define(['underscore'], function (_) {
         initData: function () {
         },
 
-        //如果传入了dom便
+        //如果传入了dom便返回
         initWrapper: function (el) {
             if (el && el[0]) {
                 this.$el = el;

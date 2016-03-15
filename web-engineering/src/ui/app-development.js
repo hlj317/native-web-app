@@ -7,7 +7,7 @@ var koa			= require( 'koa' ),
     keygrip     = require('keygrip'),
     path		= require( 'path' ),
     session     = require( 'koa-session'),
-    routes      = require('./routes');
+    routes      = require('./../../routes');
 
 var app = koa();
 
@@ -36,7 +36,7 @@ console.log("进入开发调试环境");
 //HMR，将webpack开发服务器以中间件的形式集成到local webserver
 var webpackDevMiddleware = require('koa-webpack-dev-middleware');
 var webpack = require('webpack');
-var genConf = require('./webpack.config');
+var genConf = require('./../../webpack.config.js');
 var webpackDevConf = genConf({debug: true});   //开发环境
 
 app.use(webpackDevMiddleware(webpack(webpackDevConf), {

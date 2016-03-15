@@ -2,6 +2,7 @@ define(['UIAbstractView', 'T_UIHeader','underscore'], function (UIView, template
 
   return _.inherit(UIView, {
     propertys: function ($super) {
+
       $super();
 
       var d_header = $('#headerview');

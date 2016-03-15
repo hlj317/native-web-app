@@ -147,7 +147,7 @@ define(['underscore'], function (_) {
 
         },
 
-        //组件初始化
+        //组件初始化，一定执行
         initialize: function (opts) {
             //设置默认属性
             this.propertys();

@@ -216,7 +216,6 @@ define([
 
         //@override
         getViewIdRule: function (url) {
-            debugger;
             var viewId = '', hash = '';
             var reg = /.*webapp\/(.+)\.html/;
             var match = url.match(reg);

@@ -164,7 +164,6 @@
 
         //搜索工具弹出层
         showSearchBox: function () {
-            debugger;
             var scope = this;
             if (!this.searchBox) {
                 this.searchBox = new UIScrollLayer({
