@@ -65,6 +65,8 @@
 
     "iscroll5" : "js/utils/iscroll5",
 
+    "bb-iscroll" : "js/utils/bb-iscroll",
+
     "lazysizes" : "js/libs/lazysizes",
 
     "AbstractApp": "js/mvc/abstract.app",
