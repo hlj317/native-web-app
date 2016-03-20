@@ -5,9 +5,9 @@ var viewRoot = 'pages';
 var getPlatform = function () {
     var platform = null;
     var ua = navigator.userAgent.toLowerCase();
-    //暂时只判断糯米，待补充
-    if (ua.indexOf('bdnuomi') != -1) {
-        platform = 'nuomi';
+    //判断是否萤石app
+    if (ua.indexOf('ys') != -1) {
+        platform = 'ys';
     }
 
     return platform;
@@ -30,8 +30,8 @@ var getPlatform = function () {
 //处理多容器header问题，真实场景该代码需要重构
 var modules = ['AbstractApp'];
 
-if (getPlatform() == 'nuomi') {
-    modules.push('NuomiHeader');
+if (getPlatform() == 'ys') {
+    modules.push('ysHeader');
 } else {
     modules.push('UIHeader');
 }
@@ -71,22 +71,22 @@ require(['AbstractApp','UIHeader'], function (APP, UIHeader) {
         viewRootPath: viewRoot
     });
 
-    //如果是糯米平台需要做特殊处理，准备工作必不可少
+    //如果是萤石平台需要做一些处理
     //需要等平台app注入成功后才能实例化APP
-    if (getPlatform() == 'nuomi') {
+    if (getPlatform() == 'ys') {
         var BNJSReady = function (readyCallback) {
             if (readyCallback && typeof readyCallback == 'function') {
                 if (window.BNJS && typeof window.BNJS == 'object' && BNJS._isAllReady) {
                     readyCallback();
                 } else {
-                    document.addEventListener('BNJSReady', function () {
+                    document.addEventListener('YSJSReady', function () {
                         readyCallback();
                     }, false)
                 }
             }
         };
 
-        BNJSReady(function () {
+        YSJSReady(function () {
             window.APP.initApp();
         });
         return;

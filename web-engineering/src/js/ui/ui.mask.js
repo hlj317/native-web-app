@@ -1,40 +1,39 @@
+'use strict';
 
-define(['UIAbstractView','underscore'], function (UIAbstractView,_) {
-  'use strict';
+var UIAbstractView = require('UIAbstractView');
 
-  return _.inherit(UIAbstractView, {
+var UIMask = _.inherit(UIAbstractView, {
     //默认属性
     propertys: function ($super) {
-      $super();
-      this.resetDefaultProperty();
+        $super();
+        this.resetDefaultProperty();
     },
 
     resetDefaultProperty: function () {
-      this.events = {};
+        this.events = {};
 //      this.template = '';
-      this.animateOutClass = 'cm-overlay-out';
+        this.animateOutClass = 'cm-overlay-out';
 
-      //阻止浏览器默认事件，这里是阻止滚动
-      this.addEvents({
-        'touchmove': '_preventDefault'
-      });
+        //阻止浏览器默认事件，这里是阻止滚动
+        this.addEvents({
+            'touchmove': '_preventDefault'
+        });
     },
 
     setRootStyle: function () {
-      this.$el.addClass('cm-overlay');
+        this.$el.addClass('cm-overlay');
     },
 
     addEvent: function ($super) {
-      $super();
+        $super();
 
-      this.on('onShow', function () {
-        this.setRootStyle();
-        this.setzIndexTop();
-      });
+        this.on('onShow', function () {
+            this.setRootStyle();
+            this.setzIndexTop();
+        });
 
     }
 
-  });
-
-
 });
+
+module.exports = UIMask;

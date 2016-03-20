@@ -1876,4 +1876,7 @@
       return _;
     });
   }
+
+  window._ === undefined && (window._ = _);
+
 }.call(this));

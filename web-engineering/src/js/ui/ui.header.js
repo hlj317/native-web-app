@@ -1,6 +1,8 @@
-define(['UIAbstractView', 'T_UIHeader','underscore'], function (UIView, template,_) {
+var UIView = require( 'UIAbstractView'),
+    template = require( 'T_UIHeader' );
 
-  return _.inherit(UIView, {
+var UIHeader = _.inherit(UIView, {
+
     propertys: function ($super) {
 
       $super();
@@ -65,8 +67,6 @@ define(['UIAbstractView', 'T_UIHeader','underscore'], function (UIView, template
       this.setOption(data);
       this.lastParam = data;
 
-//      document.title = data.title || '百度快行';
-
       //初始化events参数
       this.setEventsParam();
       this.refresh();
@@ -75,7 +75,7 @@ define(['UIAbstractView', 'T_UIHeader','underscore'], function (UIView, template
 
     resetDefaultPropertys: function () {
       this.left = [];
-      this.title = '百度bus';
+      this.title = '我的导航';
       this.right = [];
     },
 
@@ -113,10 +113,10 @@ define(['UIAbstractView', 'T_UIHeader','underscore'], function (UIView, template
             item = data[k][i];
             if (this['customtHandle_' + item.tagname]) {
               this['customtHandle_' + item.tagname](data[k][i], k);
-            } //if
-          } //for
-        } //if
-      } //for
+            }
+          }
+        }
+      }
     },
 
     _getDir: function (dir) {
@@ -147,6 +147,7 @@ define(['UIAbstractView', 'T_UIHeader','underscore'], function (UIView, template
       $super();
       this.wrapper.show();
     }
-
-  });
 });
+
+module.exports = UIHeader;
+

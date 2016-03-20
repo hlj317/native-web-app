@@ -1,21 +1,24 @@
+'use strict';
 
-define(['UIHeader', 'T_APPUIHeader','underscore'], function (UIHeader, template,_) {
+var UIHeader = require('UIHeader'),
+    template = require('T_APPUIHeader');
 
-    return _.inherit(UIHeader, {
+var APPUIHeader = _.inherit(UIHeader, {
 
-        propertys: function ($super) {
-            $super();
-            this.template = template;
-        },
+    propertys: function ($super) {
+        $super();
+        this.template = template;
+    },
 
-        hide: function ($super) {
-            $super();
-            //      this.wrapper.hide();
-        },
+    hide: function ($super) {
+        $super();
+        //      this.wrapper.hide();
+    },
 
-        show: function ($super) {
-            $super();
-        }
+    show: function ($super) {
+        $super();
+    }
 
-    });
 });
+
+module.exports = APPUIHeader;

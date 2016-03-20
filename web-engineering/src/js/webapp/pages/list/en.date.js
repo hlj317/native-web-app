@@ -1,60 +1,61 @@
-﻿define(['AbstractEntity','underscore'], function (AbstractEntity,_) {
+﻿'use strict';
 
-    var Entity = _.inherit(AbstractEntity, {
-        propertys: function ($super) {
-            $super();
-            var n = new Date();
-            var curTime = new Date(n.getFullYear(), n.getMonth(), n.getDate()).getTime();
-            this.data = {
-                date: curTime,
-                title: '当前日期'
-            };
-        },
+var AbstractEntity = require('AbstractEntity');
 
-        set: function (date) {
-            if (!date) return;
-            if (_.isDate(date)) date = date.getTime();
-            if (typeof date === 'string') date = parseInt(date);
-            this.data.date = date;
-            this.update();
-        },
+var Entity = _.inherit(AbstractEntity, {
+    propertys: function ($super) {
+        $super();
+        var n = new Date();
+        var curTime = new Date(n.getFullYear(), n.getMonth(), n.getDate()).getTime();
+        this.data = {
+            date: curTime,
+            title: '当前日期'
+        };
+    },
 
-        getDateStr: function () {
-            var date = new Date();
-            date.setTime(this.data.date);
-            var dateDetail = _.dateUtil.getDetail(date);
-            var name = dateDetail.year + '-' + dateDetail.month + '-' + dateDetail.day + ' ' + dateDetail.weekday + (dateDetail.day1 ? '(' + dateDetail.day1 + ')' : '');
-            return name;
-        },
+    set: function (date) {
+        if (!date) return;
+        if (_.isDate(date)) date = date.getTime();
+        if (typeof date === 'string') date = parseInt(date);
+        this.data.date = date;
+        this.update();
+    },
 
-        nextDay: function () {
-            this.set(this.getDate() + 86400000);
-            return true;
-        },
+    getDateStr: function () {
+        var date = new Date();
+        date.setTime(this.data.date);
+        var dateDetail = _.dateUtil.getDetail(date);
+        var name = dateDetail.year + '-' + dateDetail.month + '-' + dateDetail.day + ' ' + dateDetail.weekday + (dateDetail.day1 ? '(' + dateDetail.day1 + ')' : '');
+        return name;
+    },
 
-        getDate: function () {
-            return parseInt(this.data.date);
-        },
+    nextDay: function () {
+        this.set(this.getDate() + 86400000);
+        return true;
+    },
 
-        //是否能够再往前一天
-        canPreDay: function () {
-            var n = new Date();
-            var curTime = new Date(n.getFullYear(), n.getMonth(), n.getDate()).getTime();
+    getDate: function () {
+        return parseInt(this.data.date);
+    },
 
-            //如果当前日期已经是第一天，则不可预订
-            if (curTime <= this.getDate() - 86400000) {
-                return true;
-            }
-            return false;
-        },
+    //是否能够再往前一天
+    canPreDay: function () {
+        var n = new Date();
+        var curTime = new Date(n.getFullYear(), n.getMonth(), n.getDate()).getTime();
 
-        preDay: function () {
-            if (!this.canPreDay()) return false;
-            this.set(this.getDate() - 86400000);
+        //如果当前日期已经是第一天，则不可预订
+        if (curTime <= this.getDate() - 86400000) {
             return true;
         }
+        return false;
+    },
 
-    });
+    preDay: function () {
+        if (!this.canPreDay()) return false;
+        this.set(this.getDate() - 86400000);
+        return true;
+    }
 
-    return Entity;
 });
+
+module.exports = Entity;

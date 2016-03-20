@@ -1,84 +1,87 @@
-define(['UILayer', 'T_UIScrollLayer', 'UIScroll','underscore'], function (UILayer, template, UIScroll,_) {
-  'use strict';
+'use strict';
 
-  return _.inherit(UILayer, {
+var UILayer = require('UILayer'),
+    template = require('T_UIScrollLayer'),
+    UIScroll = require('UIScroll');
+
+var UIScrollLayer = _.inherit(UILayer, {
 
     resetDefaultProperty: function ($super) {
-      $super();
-      this.template = template;
+        $super();
+        this.template = template;
 
-      this.title = '';
-      this.html = '';
+        this.title = '';
+        this.html = '';
 
-      this.height = $(window).height() * 0.6;
+        this.height = $(window).height() * 0.6;
 
-      this.scrollOpts = {};
+        this.scrollOpts = {};
 
-      this.addEvents({
-        'click .js_close': 'closeAction'
+        this.addEvents({
+            'click .js_close': 'closeAction'
 
-      });
+        });
 
-      //      this.events = {
-      //        'click .js_close': 'closeAction'
-      //      };
+        //      this.events = {
+        //        'click .js_close': 'closeAction'
+        //      };
 
-      this.onCloseAction = function () { };
+        this.onCloseAction = function () {
+        };
 
     },
 
     closeAction: function () {
-      this.hide();
-      this.onCloseAction.call(this);
+        this.hide();
+        this.onCloseAction.call(this);
     },
 
     getViewModel: function () {
-      return this._getDefaultViewModel(['title', 'html']);
+        return this._getDefaultViewModel(['title', 'html']);
     },
 
     initElement: function () {
-      this.d_wrapper = this.$('.js_wrapper');
-      this.d_scoller = this.$('.js_scroller');
+        this.d_wrapper = this.$('.js_wrapper');
+        this.d_scoller = this.$('.js_scroller');
     },
 
     initScroll: function () {
-      if (!this.html) return;
-      this.$el.css({
-        '-webkit-box-sizing': 'border-box',
-        'box-sizing': 'border-box',
-        'padding': '10px',
-        'width': '100%'
-      });
+        if (!this.html) return;
+        this.$el.css({
+            '-webkit-box-sizing': 'border-box',
+            'box-sizing': 'border-box',
+            'padding': '10px',
+            'width': '100%'
+        });
 
-      if (this.d_wrapper.height() < this.height) return;
+        if (this.d_wrapper.height() < this.height) return;
 
-      this.d_wrapper.css({ 'overflow': 'hidden', 'position': 'absoulute', 'height': this.height + 'px' });
-      this.d_scoller.css('position', 'absoulute');
+        this.d_wrapper.css({'overflow': 'hidden', 'position': 'absoulute', 'height': this.height + 'px'});
+        this.d_scoller.css('position', 'absoulute');
 
-      if (this.scroll && this.scroll.destory) this.scroll.destory();
-      this.scrollOpts.wrapper = this.d_wrapper;
-      this.scrollOpts.scroller = this.d_scoller;
-      this.scroll = new UIScroll(this.scrollOpts);
+        if (this.scroll && this.scroll.destory) this.scroll.destory();
+        this.scrollOpts.wrapper = this.d_wrapper;
+        this.scrollOpts.scroller = this.d_scoller;
+        this.scroll = new UIScroll(this.scrollOpts);
 
     },
 
     addEvent: function ($super) {
-      $super();
+        $super();
 
-      this.on('onShow', function () {
-        this.initScroll();
-      }, 1);
+        this.on('onShow', function () {
+            this.initScroll();
+        }, 1);
 
-      this.on('onHide', function () {
-        if (this.scroll) {
-          this.scroll.destroy();
-          this.scroll = null;
-        }
-      });
+        this.on('onHide', function () {
+            if (this.scroll) {
+                this.scroll.destroy();
+                this.scroll = null;
+            }
+        });
 
     }
 
-  });
-
-
 });
+
+module.exports = UIScrollLayer;

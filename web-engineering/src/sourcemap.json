@@ -116,7 +116,7 @@
     "UIHeader": "js/ui/ui.header",
     "T_UIHeader": "ui/ui.header.ejs",
 
-    "NuomiHeader": "js/ui/ui.nuomi.header",
+    "YSHeader": "js/ui/ui.ys.header",
 
     "UIToast": "js/ui/ui.toast",
     "T_UIToast": "ui/ui.toast.ejs",
