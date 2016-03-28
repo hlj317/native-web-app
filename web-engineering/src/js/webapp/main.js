@@ -39,6 +39,7 @@ if (getPlatform() == 'ys') {
 require(['AbstractApp','UIHeader'], function (APP, UIHeader) {
     window.APP = new APP({
         App_Mapping: {
+
             nuomi: [
                 'index'
             ]
