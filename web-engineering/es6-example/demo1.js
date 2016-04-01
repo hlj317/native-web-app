@@ -1,15 +1,15 @@
-function helloWorld (ready) {
-    return new Promise(function (resolve, reject) {
-        if (ready) {
-            resolve("Hello World!");
-        } else {
-            reject("Good bye!");
-        }
-    });
-}
+var p1 = new Promise(function (resolve) {
+    setTimeout(function () {
+        resolve("Hello");
+    }, 3000);
+});
 
-helloWorld(true).then(function (message) {
-    console.log(message);
-}, function (error) {
-    console.log(error);
+var p2 = new Promise(function (resolve) {
+    setTimeout(function () {
+        resolve("World");
+    }, 1000);
+});
+
+Promise.all([p1, p2]).then(function (result) {
+    console.log(result); // ["Hello", "World"]
 });
