@@ -67,10 +67,10 @@ gulp.task('default', ['thirdparty'], function() {
         .pipe(replace(/<script(.+)?data-debug(.+)?><\/script>/g,''))
         // @see https://github.com/kangax/html-minifier
         // ejs和html文件压缩
-        //.pipe(htmlmin({
-        //    collapseWhitespace: true,
-        //    removeComments: true
-        //}))
+        .pipe(htmlmin({
+           collapseWhitespace: true,
+           removeComments: true
+        }))
         .pipe(gulp.dest(assets));
 });
 
