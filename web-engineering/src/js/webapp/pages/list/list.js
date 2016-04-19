@@ -21,6 +21,7 @@ var listPage = _.inherit(AbstractView, {
         this.dateEntity = new DateEntity();
 
         this.timeEntity = new TimeEntity();
+
         this.timeEntity.subscribe('init', this.renderTime, this);
         this.timeEntity.subscribe(this.renderTime, this);
         this.timeEntity.subscribe(this.refreshList, this);
