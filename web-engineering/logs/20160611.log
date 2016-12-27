@@ -1,0 +1,162 @@
+[2016-06-11 17:52:02.755] [ERROR] logInfo - [TypeError: Man.wear is not a function]
+TypeError: Man.wear is not a function
+    at Object.person (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:51:6)
+    at next (native)
+    at Object.dispatch (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/koa-router/lib/router.js:336:7)
+    at next (native)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:65:19)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+[2016-06-11 22:39:24.114] [ERROR] logInfo - [TypeError: myValue.get is not a function]
+TypeError: myValue.get is not a function
+    at Object.getSet (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:105:22)
+    at next (native)
+    at Object.dispatch (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/koa-router/lib/router.js:336:7)
+    at next (native)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:65:19)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+[2016-06-11 22:39:37.716] [ERROR] logInfo - [TypeError: myValue.get is not a function]
+TypeError: myValue.get is not a function
+    at Object.getSet (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:105:22)
+    at next (native)
+    at Object.dispatch (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/koa-router/lib/router.js:336:7)
+    at next (native)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:65:19)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+[2016-06-11 22:39:53.901] [ERROR] logInfo - [TypeError: myValue.get is not a function]
+TypeError: myValue.get is not a function
+    at Object.getSet (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:105:22)
+    at next (native)
+    at Object.dispatch (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/koa-router/lib/router.js:336:7)
+    at next (native)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:65:19)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+[2016-06-11 22:40:36.737] [ERROR] logInfo - { [RangeError: Maximum call stack size exceeded] undefined: true }
+RangeError: Maximum call stack size exceeded
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:89:11)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+[2016-06-11 22:41:14.336] [ERROR] logInfo - [TypeError: myValue.myValue is not a function]
+TypeError: myValue.myValue is not a function
+    at Object.getSet (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:104:10)
+    at next (native)
+    at Object.dispatch (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/koa-router/lib/router.js:336:7)
+    at next (native)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:65:19)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+[2016-06-11 22:41:25.210] [ERROR] logInfo - { [RangeError: Maximum call stack size exceeded] undefined: true }
+RangeError: Maximum call stack size exceeded
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:89:11)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:15)
+[2016-06-11 22:41:56.200] [ERROR] logInfo - [ReferenceError: prop is not defined]
+ReferenceError: prop is not defined
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:11)
+    at Object.getSet (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:105:21)
+    at next (native)
+    at Object.dispatch (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/koa-router/lib/router.js:336:7)
+    at next (native)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:65:19)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+[2016-06-11 22:42:08.157] [ERROR] logInfo - [ReferenceError: self is not defined]
+ReferenceError: self is not defined
+    at getSet.prop (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:91:11)
+    at Object.getSet (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/class-demo.js:105:21)
+    at next (native)
+    at Object.dispatch (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/koa-router/lib/router.js:336:7)
+    at next (native)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:65:19)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)

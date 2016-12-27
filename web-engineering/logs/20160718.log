@@ -1,0 +1,54 @@
+[2016-07-18 18:11:38.537] [ERROR] logInfo - [TypeError: res.render is not a function]
+TypeError: res.render is not a function
+    at Object.renderIndex (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/hot.js:8:9)
+    at next (native)
+    at Object.dispatch (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/koa-router/lib/router.js:336:7)
+    at next (native)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:65:19)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+[2016-07-18 18:11:50.750] [ERROR] logInfo - [TypeError: Cannot read property 'render' of undefined]
+TypeError: Cannot read property 'render' of undefined
+    at Object.renderIndex (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/hot.js:8:8)
+    at next (native)
+    at Object.dispatch (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/koa-router/lib/router.js:336:7)
+    at next (native)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:65:19)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+[2016-07-18 18:12:04.608] [ERROR] logInfo - [TypeError: Cannot read property 'render' of undefined]
+TypeError: Cannot read property 'render' of undefined
+    at Object.renderIndex (/Users/huanglijun/Desktop/native-web-app/web-es6/controllers/hot.js:8:8)
+    at Object.dispatch (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/koa-router/lib/router.js:329:52)
+    at next (native)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:65:19)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:118:63)
+    at next (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:69:7)
+    at /Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:54:5
+    at Object.co (/Users/huanglijun/Desktop/native-web-app/web-es6/node_modules/co/index.js:50:10)
